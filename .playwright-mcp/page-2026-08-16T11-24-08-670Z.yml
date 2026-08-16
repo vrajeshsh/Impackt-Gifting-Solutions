@@ -1,0 +1,192 @@
+- generic [ref=e1]:
+  - alert [ref=e925]
+  - banner [ref=e926]:
+    - generic [ref=e928]:
+      - link [ref=e930] [cursor=pointer]:
+        - /url: /
+        - img "Impackt Gifting Solutions" [ref=e931]
+      - navigation [ref=e932]:
+        - link "Shop" [ref=e933] [cursor=pointer]:
+          - /url: /shop
+        - button "Categories" [ref=e935] [cursor=pointer]
+        - link "Corporate Gifting" [ref=e936] [cursor=pointer]:
+          - /url: /corporate-gifting
+        - link "About" [ref=e937] [cursor=pointer]:
+          - /url: /about
+        - link "Contact" [ref=e938] [cursor=pointer]:
+          - /url: /contact
+      - generic [ref=e939]:
+        - button "Search" [ref=e940] [cursor=pointer]
+        - button "Account" [ref=e945] [cursor=pointer]
+        - button "Cart" [ref=e949] [cursor=pointer]
+  - main [ref=e953]:
+    - generic [ref=e1856]:
+      - generic [ref=e1858]:
+        - paragraph [ref=e1859]: Our Collection
+        - heading "Shop" [level=1] [ref=e1860]
+        - paragraph [ref=e1861]: Discover our collection of premium gifts for every occasion
+      - generic [ref=e1862]:
+        - generic [ref=e1863]:
+          - generic [ref=e1864]: 5 products
+          - generic [ref=e1866]:
+            - button "Clear all" [ref=e1867] [cursor=pointer]
+            - textbox "Search products..." [ref=e1872]
+        - generic [ref=e1876]:
+          - complementary [ref=e1877]:
+            - generic [ref=e1879]:
+              - generic [ref=e1880]:
+                - heading "Categories" [level=3] [ref=e1881]
+                - generic [ref=e1882]:
+                  - button "All Categories" [ref=e1883] [cursor=pointer]
+                  - button "Drinkware" [ref=e1884] [cursor=pointer]
+                  - button "Bags" [active] [ref=e1885] [cursor=pointer]
+                  - button "Electronics and Tech" [ref=e1886] [cursor=pointer]
+                  - button "Promotional Gifting" [ref=e1887] [cursor=pointer]
+                  - button "Apparel" [ref=e1888] [cursor=pointer]
+              - generic [ref=e1889]:
+                - heading "Occasions" [level=3] [ref=e1890]
+                - generic [ref=e1891]:
+                  - button "All Occasions" [ref=e1892] [cursor=pointer]
+                  - button "Birthday" [ref=e1893] [cursor=pointer]
+                  - button "Corporate / Employee Gifting" [ref=e1894] [cursor=pointer]
+                  - button "Festivals" [ref=e1895] [cursor=pointer]
+                  - button "Celebrations" [ref=e1896] [cursor=pointer]
+                  - button "Thank You" [ref=e1897] [cursor=pointer]
+              - generic [ref=e1898]:
+                - heading "Price" [level=3] [ref=e1899]
+                - generic [ref=e1900]:
+                  - button "All Prices" [ref=e1901] [cursor=pointer]
+                  - button "Under ₹500" [ref=e1902] [cursor=pointer]
+                  - button "₹500 – ₹1,000" [ref=e1903] [cursor=pointer]
+                  - button "₹1,000 – ₹2,500" [ref=e1904] [cursor=pointer]
+                  - button "₹2,500 – ₹5,000" [ref=e1905] [cursor=pointer]
+                  - button "₹5,000+" [ref=e1906] [cursor=pointer]
+          - generic [ref=e1908]:
+            - generic [ref=e1994]:
+              - link "Premium Backpack Premium Backpack 24% OFF Add to wishlist" [ref=e1995] [cursor=pointer]:
+                - /url: /shop/premium-backpack
+                - img "Premium Backpack" [ref=e1996]
+                - img "Premium Backpack" [ref=e1997]
+                - generic [ref=e1998]: 24% OFF
+                - button "Add to wishlist" [ref=e2000]
+              - generic [ref=e2003]:
+                - link [ref=e2004] [cursor=pointer]:
+                  - /url: /shop/premium-backpack
+                  - heading "Premium Backpack" [level=3] [ref=e2005]
+                - paragraph [ref=e2006]: Backpacks
+                - generic [ref=e2007]:
+                  - generic [ref=e2008]: ₹1,899
+                  - generic [ref=e2009]: ₹2,499
+                  - generic [ref=e2010]: 24% off
+                - paragraph [ref=e2011]: Personalizable
+                - button "Add to Cart" [ref=e2013] [cursor=pointer]
+            - generic [ref=e2016]:
+              - link "Laptop Bag - Executive Laptop Bag - Executive 24% OFF Add to wishlist" [ref=e2017] [cursor=pointer]:
+                - /url: /shop/laptop-bag-executive
+                - img "Laptop Bag - Executive" [ref=e2018]
+                - img "Laptop Bag - Executive" [ref=e2019]
+                - generic [ref=e2020]: 24% OFF
+                - button "Add to wishlist" [ref=e2022]
+              - generic [ref=e2025]:
+                - link [ref=e2026] [cursor=pointer]:
+                  - /url: /shop/laptop-bag-executive
+                  - heading "Laptop Bag - Executive" [level=3] [ref=e2027]
+                - paragraph [ref=e2028]: Laptop Bags
+                - generic [ref=e2029]:
+                  - generic [ref=e2030]: ₹2,499
+                  - generic [ref=e2031]: ₹3,299
+                  - generic [ref=e2032]: 24% off
+                - paragraph [ref=e2033]: Personalizable
+                - button "Add to Cart" [ref=e2035] [cursor=pointer]
+            - generic [ref=e2038]:
+              - link [ref=e2039] [cursor=pointer]:
+                - /url: /shop/travel-duffle-bag
+                - img "Travel Duffle Bag" [ref=e2040]
+                - img "Travel Duffle Bag" [ref=e2041]
+                - button "Add to wishlist" [ref=e2043]
+              - generic [ref=e2046]:
+                - link [ref=e2047] [cursor=pointer]:
+                  - /url: /shop/travel-duffle-bag
+                  - heading "Travel Duffle Bag" [level=3] [ref=e2048]
+                - paragraph [ref=e2049]: Duffle Bags
+                - generic [ref=e2050]: ₹1,599
+                - paragraph [ref=e2052]: Personalizable
+                - button "Add to Cart" [ref=e2054] [cursor=pointer]
+            - generic [ref=e2057]:
+              - link [ref=e2058] [cursor=pointer]:
+                - /url: /shop/sling-bag-urban
+                - img "Sling Bag - Urban" [ref=e2059]
+                - img "Sling Bag - Urban" [ref=e2060]
+                - button "Add to wishlist" [ref=e2062]
+              - generic [ref=e2065]:
+                - link [ref=e2066] [cursor=pointer]:
+                  - /url: /shop/sling-bag-urban
+                  - heading "Sling Bag - Urban" [level=3] [ref=e2067]
+                - paragraph [ref=e2068]: Sling Bags
+                - generic [ref=e2069]: ₹699
+                - paragraph [ref=e2071]: Personalizable
+                - button "Add to Cart" [ref=e2073] [cursor=pointer]
+            - generic [ref=e2076]:
+              - link [ref=e2077] [cursor=pointer]:
+                - /url: /shop/pu-leather-hand-bag
+                - img "PU Leather Hand Bag" [ref=e2078]
+                - img "PU Leather Hand Bag" [ref=e2079]
+                - button "Add to wishlist" [ref=e2081]
+              - generic [ref=e2084]:
+                - link [ref=e2085] [cursor=pointer]:
+                  - /url: /shop/pu-leather-hand-bag
+                  - heading "PU Leather Hand Bag" [level=3] [ref=e2086]
+                - paragraph [ref=e2087]: PU Leather Travel and Office Bags
+                - generic [ref=e2088]: ₹1,399
+                - paragraph [ref=e2090]: Personalizable
+                - button "Add to Cart" [ref=e2092] [cursor=pointer]
+  - contentinfo [ref=e1806]:
+    - generic [ref=e1807]:
+      - generic [ref=e1808]:
+        - generic [ref=e1809]:
+          - link [ref=e1810] [cursor=pointer]:
+            - /url: /
+            - img "Impackt Gifting Solutions" [ref=e1811]
+          - paragraph [ref=e1812]: Thoughtfully curated gifts for life's special moments, celebrations, and the people who matter.
+          - generic [ref=e1813]:
+            - link "Facebook" [ref=e1814] [cursor=pointer]:
+              - /url: https://www.facebook.com/impacktgiftingsolutions
+            - link "Instagram" [ref=e1817] [cursor=pointer]:
+              - /url: https://www.instagram.com/impacktgiftingsolutions/
+            - link "LinkedIn" [ref=e1820] [cursor=pointer]:
+              - /url: https://www.linkedin.com/company/impackt-gifting-solutions
+        - generic [ref=e1823]:
+          - heading "Shop" [level=4] [ref=e1824]
+          - list [ref=e1825]:
+            - listitem [ref=e1826]:
+              - link "All Products" [ref=e1827] [cursor=pointer]:
+                - /url: /shop
+            - listitem [ref=e1828]:
+              - link "Drinkware" [ref=e1829] [cursor=pointer]:
+                - /url: /shop?category=drinkware
+            - listitem [ref=e1830]:
+              - link "Bags" [ref=e1831] [cursor=pointer]:
+                - /url: /shop?category=bags
+            - listitem [ref=e1832]:
+              - link "Electronics" [ref=e1833] [cursor=pointer]:
+                - /url: /shop?category=electronics-tech
+            - listitem [ref=e1834]:
+              - link "Promotional Gifting" [ref=e1835] [cursor=pointer]:
+                - /url: /shop?category=promotional-gifting
+        - generic [ref=e1836]:
+          - heading "Contact" [level=4] [ref=e1837]
+          - list [ref=e1838]:
+            - listitem [ref=e1839]: 19A, Ram Mohan Dutta Rd, Sreepally, Bhowanipore, Kolkata, West Bengal 700020
+            - listitem [ref=e1840]:
+              - link "+91 73372 88823" [ref=e1841] [cursor=pointer]:
+                - /url: tel:+91 73372 88823
+            - listitem [ref=e1842]:
+              - link "info@impacktgifting.com" [ref=e1843] [cursor=pointer]:
+                - /url: mailto:info@impacktgifting.com
+      - generic [ref=e1844]:
+        - paragraph [ref=e1845]: © 2026 Impackt Gifting Solutions. All rights reserved.
+        - generic [ref=e1846]:
+          - link "Privacy Policy" [ref=e1847] [cursor=pointer]:
+            - /url: /privacy-policy
+          - link "Terms and Conditions" [ref=e1848] [cursor=pointer]:
+            - /url: /terms-and-conditions

@@ -18,6 +18,9 @@ interface AuthContextType {
   error: string | null;
   signIn: (email: string, password: string) => Promise<{ error: string | null }>;
   signUp: (email: string, password: string, fullName: string, phoneNumber: string) => Promise<{ error: string | null }>;
+  resetPassword: (email: string) => Promise<{ error: string | null }>;
+  updatePassword: (password: string) => Promise<{ error: string | null }>;
+  updateProfile: (updates: { full_name?: string | null; phone_number?: string | null; email?: string }) => Promise<{ error: string | null }>;
   signOut: () => Promise<void>;
   refreshProfile: () => Promise<void>;
   clearError: () => void;
@@ -57,6 +60,31 @@ export function AuthProvider({ children }: { children: ReactNode }) {
     } as UserProfile;
   };
 
+  const ensureProfile = async (userId: string, email: string, fullName?: string, phoneNumber?: string) => {
+    const supabase = supabaseBrowser();
+    const existing = await fetchProfile(userId);
+    if (existing) return existing;
+
+    const { data, error } = await supabase
+      .from('profiles')
+      .insert({
+        id: userId,
+        email,
+        full_name: fullName || null,
+        phone_number: phoneNumber || null,
+      })
+      .select('full_name, phone_number, email')
+      .single();
+
+    if (error || !data) return null;
+    return {
+      id: userId,
+      full_name: data.full_name,
+      email: data.email,
+      phone_number: data.phone_number,
+    } as UserProfile;
+  };
+
   const refreshProfile = async () => {
     if (!user?.id) return;
     const profileData = await fetchProfile(user.id);
@@ -77,7 +105,9 @@ export function AuthProvider({ children }: { children: ReactNode }) {
 
       if (user) {
         setUser(user);
-        const profileData = await fetchProfile(user.id);
+        const fullName = user.user_metadata?.full_name || user.user_metadata?.name;
+        const phoneNumber = user.user_metadata?.phone_number;
+        const profileData = await ensureProfile(user.id, user.email || '', fullName, phoneNumber);
         setProfile(profileData);
       }
       setIsLoading(false);
@@ -90,7 +120,9 @@ export function AuthProvider({ children }: { children: ReactNode }) {
     } = supabaseBrowser().auth.onAuthStateChange(async (_event, session) => {
       if (session?.user) {
         setUser(session.user);
-        const profileData = await fetchProfile(session.user.id);
+        const fullName = session.user.user_metadata?.full_name || session.user.user_metadata?.name;
+        const phoneNumber = session.user.user_metadata?.phone_number;
+        const profileData = await ensureProfile(session.user.id, session.user.email || '', fullName, phoneNumber);
         setProfile(profileData);
       } else {
         setUser(null);
@@ -123,7 +155,7 @@ export function AuthProvider({ children }: { children: ReactNode }) {
 
       if (data.user) {
         setUser(data.user);
-        const profileData = await fetchProfile(data.user.id);
+        const profileData = await ensureProfile(data.user.id, data.user.email || '');
         setProfile(profileData);
       }
       return { error: null };
@@ -160,7 +192,6 @@ export function AuthProvider({ children }: { children: ReactNode }) {
       }
 
       if (data.user) {
-        // Create profile record
         await supabase.from('profiles').insert({
           id: data.user.id,
           email,
@@ -194,11 +225,92 @@ export function AuthProvider({ children }: { children: ReactNode }) {
     setProfile(null);
   };
 
+  const resetPassword = async (email: string) => {
+    setError(null);
+    if (!checkConfig()) {
+      setError('Database connection missing - Check .env.local');
+      return { error: 'Database connection missing - Check .env.local' };
+    }
+
+    try {
+      const supabase = supabaseBrowser();
+      const { error } = await supabase.auth.resetPasswordForEmail(email, {
+        redirectTo: `${window.location.origin}/update-password`,
+      });
+
+      if (error) {
+        setError(error.message);
+        return { error: error.message };
+      }
+
+      return { error: null };
+    } catch (err) {
+      const message = err instanceof Error ? err.message : 'Password reset failed';
+      setError(message);
+      return { error: message };
+    }
+  };
+
+  const updatePassword = async (password: string) => {
+    setError(null);
+    if (!checkConfig()) {
+      setError('Database connection missing - Check .env.local');
+      return { error: 'Database connection missing - Check .env.local' };
+    }
+
+    try {
+      const supabase = supabaseBrowser();
+      const { error } = await supabase.auth.updateUser({ password });
+
+      if (error) {
+        setError(error.message);
+        return { error: error.message };
+      }
+
+      return { error: null };
+    } catch (err) {
+      const message = err instanceof Error ? err.message : 'Password update failed';
+      setError(message);
+      return { error: message };
+    }
+  };
+
+  const updateProfile = async (updates: { full_name?: string | null; phone_number?: string | null; email?: string }) => {
+    if (!user?.id) return { error: 'Not authenticated' };
+    setError(null);
+    
+    try {
+      const supabase = supabaseBrowser();
+      const { error } = await supabase
+        .from('profiles')
+        .update({
+          ...updates,
+          email: updates.email ?? profile?.email,
+        })
+        .eq('id', user.id);
+
+      if (error) {
+        setError(error.message);
+        return { error: error.message };
+      }
+
+      const updatedProfile = await fetchProfile(user.id);
+      if (updatedProfile) {
+        setProfile(updatedProfile);
+      }
+      return { error: null };
+    } catch (err) {
+      const message = err instanceof Error ? err.message : 'Profile update failed';
+      setError(message);
+      return { error: message };
+    }
+  };
+
   const clearError = () => setError(null);
 
   return (
     <AuthContext.Provider
-      value={{ user, profile, isLoading, isConfigured, error, signIn, signUp, signOut, refreshProfile, clearError }}
+      value={{ user, profile, isLoading, isConfigured, error, signIn, signUp, resetPassword, updatePassword, updateProfile, signOut, refreshProfile, clearError }}
     >
       {children}
     </AuthContext.Provider>

@@ -1,0 +1,147 @@
+- generic [active] [ref=f3e1]:
+  - banner [ref=f3e2]:
+    - generic [ref=f3e4]:
+      - generic [ref=f3e5]:
+        - button "Toggle menu" [ref=f3e6]
+        - link [ref=f3e8] [cursor=pointer]:
+          - /url: /
+          - img "Impackt Gifting Solutions" [ref=f3e9]
+      - navigation [ref=f3e10]:
+        - link "Shop" [ref=f3e11] [cursor=pointer]:
+          - /url: /shop
+        - generic [ref=f3e12]:
+          - button "Categories" [ref=f3e13]
+          - generic [ref=f3e15]:
+            - link "Drinkware" [ref=f3e16] [cursor=pointer]:
+              - /url: /shop?category=drinkware
+            - link "Bags" [ref=f3e17] [cursor=pointer]:
+              - /url: /shop?category=bags
+            - link "Electronics and Tech" [ref=f3e18] [cursor=pointer]:
+              - /url: /shop?category=electronics-tech
+            - link "Promotional Gifting" [ref=f3e19] [cursor=pointer]:
+              - /url: /shop?category=promotional-gifting
+            - link "Apparel" [ref=f3e20] [cursor=pointer]:
+              - /url: /shop?category=apparel
+        - link "Corporate Gifting" [ref=f3e21] [cursor=pointer]:
+          - /url: /corporate-gifting
+        - link "About" [ref=f3e22] [cursor=pointer]:
+          - /url: /about
+        - link "Contact" [ref=f3e23] [cursor=pointer]:
+          - /url: /contact
+      - generic [ref=f3e24]:
+        - button "Search" [ref=f3e25]
+        - button "Account" [ref=f3e30]
+        - button "Cart" [ref=f3e34]
+  - main [ref=f3e38]:
+    - generic [ref=f3e39]:
+      - generic [ref=f3e41]:
+        - paragraph [ref=f3e42]: Our Story
+        - heading "A Legacy of Excellence" [level=1] [ref=f3e43]
+        - paragraph [ref=f3e44]: From kitchenware to premium gifting — six decades of trust, now reimagined for modern India.
+      - generic [ref=f3e46]:
+        - generic [ref=f3e47]:
+          - img "Our story" [ref=f3e49]
+          - generic [ref=f3e50]:
+            - paragraph [ref=f3e51]: Welcome to Impackt Gifting Solutions (IGS), where we bring the art of gifting to a whole new level. Founded in 2023 by Rushabh Shah, IGS is built upon a legacy of excellence and innovation in the SS Kitchenware business, which has been thriving for the past 60 years.
+            - paragraph [ref=f3e52]: Our journey began in the heart of Kolkata, where our family business became synonymous with quality kitchenware. Over six decades, we built trust with thousands of households and businesses across India. In 2023, we channeled that same trust and taste into gifting — creating Impackt Gifting Solutions.
+            - paragraph [ref=f3e53]: We believe gifting is not just about products. It is about emotions, relationships, and the stories we tell through thoughtful gestures. Whether it is a birthday, a festival, a corporate milestone, or a simple thank you, we curate gifts that resonate.
+            - paragraph [ref=f3e54]: Today, Impackt Gifting Solutions stands at the intersection of tradition and modernity. We combine our deep understanding of Indian gifting culture with contemporary design, premium quality, and personalized touches that make every gift extraordinary.
+            - paragraph [ref=f3e55]: "Our mission is simple: to make every occasion memorable with gifts that truly make an impression."
+        - generic [ref=f3e56]:
+          - paragraph [ref=f3e57]: Our Journey
+          - heading "Six Decades of Trust" [level=2] [ref=f3e58]
+        - generic [ref=f3e59]:
+          - generic [ref=f3e60]:
+            - paragraph [ref=f3e61]: 1960s
+            - heading "The Beginning" [level=3] [ref=f3e62]
+            - paragraph [ref=f3e63]: Our family establishes SS Kitchenware in Kolkata, building a reputation for quality and trust.
+          - generic [ref=f3e64]:
+            - paragraph [ref=f3e65]: 1980s
+            - heading "Expansion" [level=3] [ref=f3e66]
+            - paragraph [ref=f3e67]: We expand our product range and distribution across West Bengal, becoming a household name.
+          - generic [ref=f3e68]:
+            - paragraph [ref=f3e69]: 2000s
+            - heading "National Reach" [level=3] [ref=f3e70]
+            - paragraph [ref=f3e71]: We extend our presence across India, serving both retail and corporate clients.
+          - generic [ref=f3e72]:
+            - paragraph [ref=f3e73]: "2023"
+            - heading "Impackt Gifting Solutions" [level=3] [ref=f3e74]
+            - paragraph [ref=f3e75]: Launching a dedicated gifting brand to redefine how India gives and receives gifts.
+        - generic [ref=f3e76]:
+          - paragraph [ref=f3e77]: What We Believe
+          - heading "The Impackt Difference" [level=2] [ref=f3e78]
+        - generic [ref=f3e79]:
+          - paragraph [ref=f3e81]: "\"Gifting is a language of love, respect, and gratitude.\""
+          - paragraph [ref=f3e83]: "\"Every gift should reflect the thought behind it, not just its price tag.\""
+          - paragraph [ref=f3e85]: "\"Indian gifting traditions deserve modern, premium expressions.\""
+          - paragraph [ref=f3e87]: "\"Sustainability and ethics are non-negotiable in the products we choose.\""
+          - paragraph [ref=f3e89]: "\"Corporate gifting is an art that builds lasting relationships.\""
+        - generic [ref=f3e90]:
+          - paragraph [ref=f3e91]: What Sets Us Apart
+          - heading "Why Choose Us" [level=2] [ref=f3e92]
+        - generic [ref=f3e93]:
+          - generic [ref=f3e94]:
+            - heading "Personalization Excellence" [level=3] [ref=f3e95]
+            - paragraph [ref=f3e96]: We understand that every individual is unique, and every relationship is special. That's why we offer a wide range of personalized gifts that can be tailored to suit your recipient's personality and preferences. From custom-made gift baskets to monogrammed keepsakes, we're here to help you create memorable moments.
+          - generic [ref=f3e97]:
+            - heading "Corporate Gifting Expertise" [level=3] [ref=f3e98]
+            - paragraph [ref=f3e99]: Impackt Gifting Solutions is your trusted partner in corporate gifting. We recognize the importance of nurturing business relationships, and our team of experts is dedicated to curating corporate gift solutions that reflect your brand's identity and convey your appreciation to clients, partners, and employees.
+          - generic [ref=f3e100]:
+            - heading "Curated Collections" [level=3] [ref=f3e101]
+            - paragraph [ref=f3e102]: Our selection of gift items spans a wide spectrum of choices, from luxury indulgences to practical everyday essentials. We take pride in offering a meticulously curated collection, ensuring that you find the perfect gift for any occasion or recipient.
+          - generic [ref=f3e103]:
+            - heading "Impeccable Quality" [level=3] [ref=f3e104]
+            - paragraph [ref=f3e105]: Quality is our hallmark. We source our products from trusted suppliers and artisans, ensuring that each item in our inventory meets the highest standards of craftsmanship and durability.
+          - generic [ref=f3e106]:
+            - heading "Sustainable Gifting" [level=3] [ref=f3e107]
+            - paragraph [ref=f3e108]: We are committed to sustainability and environmentally responsible practices. Many of our products are sourced from eco-friendly materials, and we offer options for sustainable packaging, ensuring that your gifts align with your values.
+  - contentinfo [ref=f3e109]:
+    - generic [ref=f3e110]:
+      - generic [ref=f3e111]:
+        - generic [ref=f3e112]:
+          - link [ref=f3e113] [cursor=pointer]:
+            - /url: /
+            - img "Impackt Gifting Solutions" [ref=f3e114]
+          - paragraph [ref=f3e115]: Thoughtfully curated gifts for life's special moments, celebrations, and the people who matter.
+          - generic [ref=f3e116]:
+            - link "Facebook" [ref=f3e117] [cursor=pointer]:
+              - /url: https://www.facebook.com/impacktgiftingsolutions
+            - link "Instagram" [ref=f3e120] [cursor=pointer]:
+              - /url: https://www.instagram.com/impacktgiftingsolutions/
+            - link "LinkedIn" [ref=f3e123] [cursor=pointer]:
+              - /url: https://www.linkedin.com/company/impackt-gifting-solutions
+        - generic [ref=f3e126]:
+          - heading "Shop" [level=4] [ref=f3e127]
+          - list [ref=f3e128]:
+            - listitem [ref=f3e129]:
+              - link "All Products" [ref=f3e130] [cursor=pointer]:
+                - /url: /shop
+            - listitem [ref=f3e131]:
+              - link "Drinkware" [ref=f3e132] [cursor=pointer]:
+                - /url: /shop?category=drinkware
+            - listitem [ref=f3e133]:
+              - link "Bags" [ref=f3e134] [cursor=pointer]:
+                - /url: /shop?category=bags
+            - listitem [ref=f3e135]:
+              - link "Electronics" [ref=f3e136] [cursor=pointer]:
+                - /url: /shop?category=electronics-tech
+            - listitem [ref=f3e137]:
+              - link "Promotional Gifting" [ref=f3e138] [cursor=pointer]:
+                - /url: /shop?category=promotional-gifting
+        - generic [ref=f3e139]:
+          - heading "Contact" [level=4] [ref=f3e140]
+          - list [ref=f3e141]:
+            - listitem [ref=f3e142]: 19A, Ram Mohan Dutta Rd, Sreepally, Bhowanipore, Kolkata, West Bengal 700020
+            - listitem [ref=f3e143]:
+              - link "+91 73372 88823" [ref=f3e144] [cursor=pointer]:
+                - /url: tel:+91 73372 88823
+            - listitem [ref=f3e145]:
+              - link "info@impacktgifting.com" [ref=f3e146] [cursor=pointer]:
+                - /url: mailto:info@impacktgifting.com
+      - generic [ref=f3e147]:
+        - paragraph [ref=f3e148]: © 2026 Impackt Gifting Solutions. All rights reserved.
+        - generic [ref=f3e149]:
+          - link "Privacy Policy" [ref=f3e150] [cursor=pointer]:
+            - /url: /privacy-policy
+          - link "Terms and Conditions" [ref=f3e151] [cursor=pointer]:
+            - /url: /terms-and-conditions

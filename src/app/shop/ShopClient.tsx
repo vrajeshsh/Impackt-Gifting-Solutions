@@ -2,7 +2,7 @@
 
 import { useState, useMemo, useEffect } from 'react';
 import { useSearchParams } from 'next/navigation';
-import { products as localProducts, occasions, priceRanges } from '@/data/products';
+import { products as localProducts, occasions, priceRanges, categories } from '@/data/products';
 import { getProducts } from '@/lib/productsDb';
 import ProductGrid from '@/components/products/ProductGrid';
 import ProductFilters from '@/components/products/ProductFilters';
@@ -11,9 +11,9 @@ import { Product } from '@/types';
 
 export default function ShopClient() {
   const searchParams = useSearchParams();
-  const [selectedCategory, setSelectedCategory] = useState<string | undefined>();
-  const [selectedOccasion, setSelectedOccasion] = useState<string | undefined>();
-  const [selectedPriceRange, setSelectedPriceRange] = useState<string | undefined>();
+  const [selectedCategory, setSelectedCategory] = useState<string | undefined>(searchParams.get('category') || undefined);
+  const [selectedOccasion, setSelectedOccasion] = useState<string | undefined>(undefined);
+  const [selectedPriceRange, setSelectedPriceRange] = useState<string | undefined>(undefined);
   const [showFilters, setShowFilters] = useState(false);
   const [searchQuery, setSearchQuery] = useState(searchParams.get('search') || '');
   const [products, setProducts] = useState<Product[]>(localProducts);
@@ -21,6 +21,16 @@ export default function ShopClient() {
   useEffect(() => {
     getProducts().then(setProducts);
   }, []);
+
+  useEffect(() => {
+    const categoryParam = searchParams.get('category');
+    if (categoryParam !== null) {
+      const validCategory = categories.find(c => c.slug === categoryParam);
+      setSelectedCategory(validCategory ? categoryParam : undefined);
+    } else {
+      setSelectedCategory(undefined);
+    }
+  }, [searchParams]);
 
   const filtered = useMemo(() => {
     return products.filter((product) => {

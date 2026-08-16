@@ -20,9 +20,20 @@ export const metadata: Metadata = {
     default: 'Impackt Gifting Solutions | Premium Gifts for Every Occasion',
     template: '%s | Impackt Gifting',
   },
-  description: 'Thoughtfully curated premium gifts for birthdays, anniversaries, corporate events, and all special moments. Personalization available. Based in Kolkata, India.',
-  keywords: ['corporate gifts India', 'personalized gifts', 'premium gifting', 'employee gifts', 'client gifts', 'Diwali gifts', 'corporate gifting Kolkata'],
+  description: 'Discover premium corporate gifting, personalized gifts, and luxury employee gifts at Impackt Gifting Solutions. Custom branding, bulk orders, and curated hampers for every occasion. Based in Kolkata, India.',
+  keywords: ['corporate gifting', 'personalized gifts', 'luxury employee gifts', 'custom corporate gifts', 'premium gifting India', 'employee appreciation gifts', 'client gifts', 'Diwali gifts', 'corporate gifting Kolkata', 'gift hampers'],
   authors: [{ name: 'Impackt Gifting Solutions' }],
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      'max-video-preview': -1,
+      'max-image-preview': 'large',
+      'max-snippet': -1,
+    },
+  },
   icons: {
     icon: [
       { url: '/favicon.png', sizes: '512x512', type: 'image/png' },
@@ -37,7 +48,7 @@ export const metadata: Metadata = {
     url: 'https://impacktgifting.com',
     siteName: 'Impackt Gifting Solutions',
     title: 'Impackt Gifting Solutions | Premium Gifts for Every Occasion',
-    description: 'Thoughtfully curated premium gifts for every occasion. Corporate gifting, personalized gifts, and more.',
+    description: 'Discover premium corporate gifting, personalized gifts, and luxury employee gifts. Custom branding, bulk orders, and curated hampers for every occasion.',
     images: ['/og-image.jpg'],
   },
 };

@@ -1,13 +1,17 @@
 {
-	"servers": {
-		"supabase": {
-			"type": "http",
-			"url": "https://mcp.supabase.com/mcp?project_ref=iiemzocumkgrlycensgy&features=docs,account,database,debugging,development,functions,branching"
-		},
-		"netlify-mcp": {
-			"type": "http",
-			"url": "https://netlify-mcp.netlify.app/mcp"
-		}
-	},
-	"inputs": []
+  "servers": {
+    "supabase": {
+      "type": "http",
+      "url": "https://mcp.supabase.com/mcp?project_ref=iiemzocumkgrlycensgy&features=docs,account,database"
+    },
+    "netlify-mcp": {
+      "type": "http",
+      "url": "https://netlify-mcp.netlify.app/mcp"
+    },
+    "semrush": {
+      "type": "http",
+      "url": "https://mcp.semrush.com/v2/mcp"
+    }
+  },
+  "inputs": []
 }

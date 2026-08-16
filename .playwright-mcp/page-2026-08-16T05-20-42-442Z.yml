@@ -1,0 +1,85 @@
+- generic [ref=f1e1]:
+  - alert [ref=f1e76]
+  - banner [ref=f1e77]:
+    - generic [ref=f1e79]:
+      - link [ref=f1e81] [cursor=pointer]:
+        - /url: /
+        - img "Impackt Gifting Solutions" [ref=f1e82]
+      - navigation [ref=f1e83]:
+        - link "Shop" [ref=f1e84] [cursor=pointer]:
+          - /url: /shop
+        - button "Categories" [ref=f1e86] [cursor=pointer]
+        - link "Corporate Gifting" [ref=f1e87] [cursor=pointer]:
+          - /url: /corporate-gifting
+        - link "About" [ref=f1e88] [cursor=pointer]:
+          - /url: /about
+        - link "Contact" [ref=f1e89] [cursor=pointer]:
+          - /url: /contact
+      - generic [ref=f1e90]:
+        - button "Search" [ref=f1e91] [cursor=pointer]
+        - button "Account" [ref=f1e96] [cursor=pointer]
+        - button "Cart" [ref=f1e100] [cursor=pointer]
+  - main [ref=f1e104]:
+    - generic [ref=f1e107]:
+      - generic [ref=f1e162]: Passwords do not match
+      - generic [ref=f1e108]:
+        - heading "Update Password" [level=1] [ref=f1e109]
+        - paragraph [ref=f1e110]: Enter your new password below.
+      - generic [ref=f1e111]:
+        - generic [ref=f1e112]:
+          - generic [ref=f1e113]: New Password
+          - textbox "Enter new password" [ref=f1e114]: newpassword123
+        - generic [ref=f1e115]:
+          - generic [ref=f1e116]: Confirm New Password
+          - textbox "Confirm new password" [ref=f1e117]: differentpassword
+        - button "Update Password" [active] [ref=f1e118] [cursor=pointer]
+  - contentinfo [ref=f1e119]:
+    - generic [ref=f1e120]:
+      - generic [ref=f1e121]:
+        - generic [ref=f1e122]:
+          - link [ref=f1e123] [cursor=pointer]:
+            - /url: /
+            - img "Impackt Gifting Solutions" [ref=f1e124]
+          - paragraph [ref=f1e125]: Thoughtfully curated gifts for life's special moments, celebrations, and the people who matter.
+          - generic [ref=f1e126]:
+            - link "Facebook" [ref=f1e127] [cursor=pointer]:
+              - /url: https://www.facebook.com/impacktgiftingsolutions
+            - link "Instagram" [ref=f1e130] [cursor=pointer]:
+              - /url: https://www.instagram.com/impacktgiftingsolutions/
+            - link "LinkedIn" [ref=f1e133] [cursor=pointer]:
+              - /url: https://www.linkedin.com/company/impackt-gifting-solutions
+        - generic [ref=f1e136]:
+          - heading "Shop" [level=4] [ref=f1e137]
+          - list [ref=f1e138]:
+            - listitem [ref=f1e139]:
+              - link "All Products" [ref=f1e140] [cursor=pointer]:
+                - /url: /shop
+            - listitem [ref=f1e141]:
+              - link "Drinkware" [ref=f1e142] [cursor=pointer]:
+                - /url: /shop?category=drinkware
+            - listitem [ref=f1e143]:
+              - link "Bags" [ref=f1e144] [cursor=pointer]:
+                - /url: /shop?category=bags
+            - listitem [ref=f1e145]:
+              - link "Electronics" [ref=f1e146] [cursor=pointer]:
+                - /url: /shop?category=electronics-tech
+            - listitem [ref=f1e147]:
+              - link "Promotional Gifting" [ref=f1e148] [cursor=pointer]:
+                - /url: /shop?category=promotional-gifting
+        - generic [ref=f1e149]:
+          - heading "Contact" [level=4] [ref=f1e150]
+          - list [ref=f1e151]:
+            - listitem [ref=f1e152]: 19A, Ram Mohan Dutta Rd, Sreepally, Bhowanipore, Kolkata, West Bengal 700020
+            - listitem [ref=f1e153]:
+              - link "+91 73372 88823" [ref=f1e154] [cursor=pointer]:
+                - /url: tel:+91 73372 88823
+            - listitem [ref=f1e155]:
+              - link "info@impacktgifting.com" [ref=f1e156] [cursor=pointer]:
+                - /url: mailto:info@impacktgifting.com
+      - generic [ref=f1e157]:
+        - paragraph [ref=f1e158]: © 2026 Impackt Gifting Solutions. All rights reserved.
+        - generic [ref=f1e159]:
+          - link "Privacy Policy" [ref=f1e160] [cursor=pointer]:
+            - /url: /privacy-policy
+          - link "Terms and Conditions" [ref=f1e161] [cursor=pointer]:
+            - /url: /terms-and-conditions

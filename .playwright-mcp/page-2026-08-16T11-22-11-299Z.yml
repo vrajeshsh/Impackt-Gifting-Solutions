@@ -1,0 +1,762 @@
+- generic [active] [ref=e1]:
+  - banner [ref=e2]:
+    - generic [ref=e4]:
+      - link [ref=e6] [cursor=pointer]:
+        - /url: /
+        - img "Impackt Gifting Solutions" [ref=e7]
+      - navigation [ref=e8]:
+        - link "Shop" [ref=e9] [cursor=pointer]:
+          - /url: /shop
+        - button "Categories" [ref=e11] [cursor=pointer]
+        - link "Corporate Gifting" [ref=e12] [cursor=pointer]:
+          - /url: /corporate-gifting
+        - link "About" [ref=e13] [cursor=pointer]:
+          - /url: /about
+        - link "Contact" [ref=e14] [cursor=pointer]:
+          - /url: /contact
+      - generic [ref=e15]:
+        - button "Search" [ref=e16] [cursor=pointer]
+        - button "Account" [ref=e21] [cursor=pointer]
+        - button "Cart" [ref=e25] [cursor=pointer]
+  - main [ref=e29]:
+    - generic [ref=e30]:
+      - generic [ref=e31]:
+        - generic [ref=e32]:
+          - img "Festive & Seasonal Gifting" [ref=e33]
+          - generic [ref=e37]:
+            - paragraph [ref=e38]: Up to 40% Off on Curated Hampers
+            - heading "Festive & Seasonal Gifting" [level=1] [ref=e39]
+            - generic [ref=e40]:
+              - generic [ref=e41]: Limited-time deal
+              - generic [ref=e46]:
+                - img "Festive Gift Hamper" [ref=e48]
+                - generic [ref=e49]:
+                  - paragraph [ref=e50]: Festive Gift Hamper
+                  - paragraph [ref=e51]: Deal ends in
+              - generic [ref=e52]:
+                - generic [ref=e53]: "05"
+                - generic [ref=e54]: ":"
+                - generic [ref=e55]: "22"
+                - generic [ref=e56]: ":"
+                - generic [ref=e57]: "18"
+            - link "Shop Festive Sale" [ref=e59] [cursor=pointer]:
+              - /url: /shop?occasion=festival
+        - generic [ref=e60]:
+          - img "Custom Corporate Gifting" [ref=e61]
+          - generic [ref=e65]:
+            - paragraph [ref=e66]: Bulk Branding & Custom Logo Printing Available
+            - heading "Custom Corporate Gifting" [level=1] [ref=e67]
+            - generic [ref=e68]:
+              - generic [ref=e69]: Limited-time deal
+              - generic [ref=e74]:
+                - img "Festive Gift Hamper" [ref=e76]
+                - generic [ref=e77]:
+                  - paragraph [ref=e78]: Festive Gift Hamper
+                  - paragraph [ref=e79]: Deal ends in
+              - generic [ref=e80]:
+                - generic [ref=e81]: "05"
+                - generic [ref=e82]: ":"
+                - generic [ref=e83]: "22"
+                - generic [ref=e84]: ":"
+                - generic [ref=e85]: "18"
+            - link "Get Bulk Quote" [ref=e87] [cursor=pointer]:
+              - /url: /corporate-gifting
+        - generic [ref=e88]:
+          - img "Premium Executive Collections" [ref=e89]
+          - generic [ref=e93]:
+            - paragraph [ref=e94]: Handcrafted Leather & Eco-friendly Desk Essentials
+            - heading "Premium Executive Collections" [level=1] [ref=e95]
+            - generic [ref=e96]:
+              - generic [ref=e97]: Limited-time deal
+              - generic [ref=e102]:
+                - img "Festive Gift Hamper" [ref=e104]
+                - generic [ref=e105]:
+                  - paragraph [ref=e106]: Festive Gift Hamper
+                  - paragraph [ref=e107]: Deal ends in
+              - generic [ref=e108]:
+                - generic [ref=e109]: "05"
+                - generic [ref=e110]: ":"
+                - generic [ref=e111]: "22"
+                - generic [ref=e112]: ":"
+                - generic [ref=e113]: "18"
+            - link "Explore Premium" [ref=e115] [cursor=pointer]:
+              - /url: /shop?category=promotional-gifting
+        - button "Previous slide" [ref=e116] [cursor=pointer]
+        - button "Next slide" [ref=e119] [cursor=pointer]
+        - generic [ref=e122]:
+          - button "Go to slide 1" [ref=e123] [cursor=pointer]
+          - button "Go to slide 2" [ref=e124] [cursor=pointer]
+          - button "Go to slide 3" [ref=e125] [cursor=pointer]
+      - generic [ref=e127]:
+        - generic [ref=e128]:
+          - paragraph [ref=e129]: Not sure what to gift?
+          - heading "Find the Perfect Gift" [level=2] [ref=e130]
+          - paragraph [ref=e131]: Tell us who you are gifting to and we will handpick the best options for you.
+        - generic [ref=e133]:
+          - generic [ref=e134]:
+            - generic [ref=e135]: Select Recipient
+            - combobox [ref=e136]:
+              - option "Who are you gifting?" [selected]
+              - option "Client"
+              - option "Employee"
+              - option "Friend"
+              - option "Family"
+          - generic [ref=e137]:
+            - generic [ref=e138]: Occasion
+            - combobox [ref=e139]:
+              - option "Select occasion" [selected]
+              - option "Birthday"
+              - option "Corporate / Employee Gifting"
+              - option "Festivals"
+              - option "Celebrations"
+              - option "Thank You"
+          - generic [ref=e140]:
+            - generic [ref=e141]: Budget Range
+            - combobox [ref=e142]:
+              - option "Select budget" [selected]
+              - option "Under ₹500"
+              - option "₹500 – ₹1,000"
+              - option "₹1,000 – ₹2,500"
+              - option "₹2,500 – ₹5,000"
+              - option "₹5,000+"
+          - button "Find Perfect Gift" [ref=e144] [cursor=pointer]
+      - generic [ref=e149]:
+        - generic [ref=e150]:
+          - paragraph [ref=e151]: Collections
+          - heading "Shop by Category" [level=2] [ref=e152]
+          - paragraph [ref=e153]: Explore our carefully curated collections of premium gifts
+        - generic [ref=e154]:
+          - link [ref=e155] [cursor=pointer]:
+            - /url: /shop?category=drinkware
+            - img "Drinkware" [ref=e156]
+            - generic [ref=e159]:
+              - heading "Drinkware" [level=3] [ref=e160]
+              - paragraph [ref=e161]: 25 products
+          - link [ref=e162] [cursor=pointer]:
+            - /url: /shop?category=bags
+            - img "Bags" [ref=e163]
+            - generic [ref=e166]:
+              - heading "Bags" [level=3] [ref=e167]
+              - paragraph [ref=e168]: 40 products
+          - link [ref=e169] [cursor=pointer]:
+            - /url: /shop?category=electronics-tech
+            - img "Electronics and Tech" [ref=e170]
+            - generic [ref=e173]:
+              - heading "Electronics and Tech" [level=3] [ref=e174]
+              - paragraph [ref=e175]: 20 products
+          - link [ref=e176] [cursor=pointer]:
+            - /url: /shop?category=promotional-gifting
+            - img "Promotional Gifting" [ref=e177]
+            - generic [ref=e180]:
+              - heading "Promotional Gifting" [level=3] [ref=e181]
+              - paragraph [ref=e182]: 35 products
+          - link [ref=e183] [cursor=pointer]:
+            - /url: /shop?category=apparel
+            - img "Apparel" [ref=e184]
+            - generic [ref=e187]:
+              - heading "Apparel" [level=3] [ref=e188]
+              - paragraph [ref=e189]: 15 products
+      - generic [ref=e191]:
+        - generic [ref=e192]:
+          - generic [ref=e193]:
+            - paragraph [ref=e194]: Most Loved
+            - heading "Best Sellers" [level=2] [ref=e195]
+          - link "View All" [ref=e196] [cursor=pointer]:
+            - /url: /shop
+        - generic [ref=e198]:
+          - generic [ref=e199]:
+            - link "Classic Stainless Steel Bottle Classic Stainless Steel Bottle 35% OFF Add to wishlist" [ref=e200] [cursor=pointer]:
+              - /url: /shop/classic-stainless-steel-bottle
+              - img "Classic Stainless Steel Bottle" [ref=e201]
+              - img "Classic Stainless Steel Bottle" [ref=e202]
+              - generic [ref=e203]: 35% OFF
+              - button "Add to wishlist" [ref=e205]
+            - generic [ref=e208]:
+              - link [ref=e209] [cursor=pointer]:
+                - /url: /shop/classic-stainless-steel-bottle
+                - heading "Classic Stainless Steel Bottle" [level=3] [ref=e210]
+              - paragraph [ref=e211]: Bottles and Flasks
+              - generic [ref=e212]:
+                - generic [ref=e213]: ₹1,299
+                - generic [ref=e214]: ₹1,999
+                - generic [ref=e215]: 35% off
+              - paragraph [ref=e216]: Personalizable
+              - button "Add to Cart" [ref=e218] [cursor=pointer]
+          - generic [ref=e220]:
+            - link "Copper Water Bottle Copper Water Bottle 40% OFF Add to wishlist" [ref=e221] [cursor=pointer]:
+              - /url: /shop/copper-water-bottle
+              - img "Copper Water Bottle" [ref=e222]
+              - img "Copper Water Bottle" [ref=e223]
+              - generic [ref=e224]: 40% OFF
+              - button "Add to wishlist" [ref=e226]
+            - generic [ref=e229]:
+              - link [ref=e230] [cursor=pointer]:
+                - /url: /shop/copper-water-bottle
+                - heading "Copper Water Bottle" [level=3] [ref=e231]
+              - paragraph [ref=e232]: Bottles and Flasks
+              - generic [ref=e233]:
+                - generic [ref=e234]: ₹899
+                - generic [ref=e235]: ₹1,499
+                - generic [ref=e236]: 40% off
+              - paragraph [ref=e237]: Personalizable
+              - button "Add to Cart" [ref=e239] [cursor=pointer]
+          - generic [ref=e241]:
+            - link "Premium Backpack Premium Backpack 24% OFF Add to wishlist" [ref=e242] [cursor=pointer]:
+              - /url: /shop/premium-backpack
+              - img "Premium Backpack" [ref=e243]
+              - img "Premium Backpack" [ref=e244]
+              - generic [ref=e245]: 24% OFF
+              - button "Add to wishlist" [ref=e247]
+            - generic [ref=e250]:
+              - link [ref=e251] [cursor=pointer]:
+                - /url: /shop/premium-backpack
+                - heading "Premium Backpack" [level=3] [ref=e252]
+              - paragraph [ref=e253]: Backpacks
+              - generic [ref=e254]:
+                - generic [ref=e255]: ₹1,899
+                - generic [ref=e256]: ₹2,499
+                - generic [ref=e257]: 24% off
+              - paragraph [ref=e258]: Personalizable
+              - button "Add to Cart" [ref=e260] [cursor=pointer]
+          - generic [ref=e262]:
+            - link "Laptop Bag - Executive Laptop Bag - Executive 24% OFF Add to wishlist" [ref=e263] [cursor=pointer]:
+              - /url: /shop/laptop-bag-executive
+              - img "Laptop Bag - Executive" [ref=e264]
+              - img "Laptop Bag - Executive" [ref=e265]
+              - generic [ref=e266]: 24% OFF
+              - button "Add to wishlist" [ref=e268]
+            - generic [ref=e271]:
+              - link [ref=e272] [cursor=pointer]:
+                - /url: /shop/laptop-bag-executive
+                - heading "Laptop Bag - Executive" [level=3] [ref=e273]
+              - paragraph [ref=e274]: Laptop Bags
+              - generic [ref=e275]:
+                - generic [ref=e276]: ₹2,499
+                - generic [ref=e277]: ₹3,299
+                - generic [ref=e278]: 24% off
+              - paragraph [ref=e279]: Personalizable
+              - button "Add to Cart" [ref=e281] [cursor=pointer]
+          - generic [ref=e283]:
+            - link "Wireless Earbuds Wireless Earbuds 27% OFF Add to wishlist" [ref=e284] [cursor=pointer]:
+              - /url: /shop/wireless-earbuds
+              - img "Wireless Earbuds" [ref=e285]
+              - img "Wireless Earbuds" [ref=e286]
+              - generic [ref=e287]: 27% OFF
+              - button "Add to wishlist" [ref=e289]
+            - generic [ref=e292]:
+              - link [ref=e293] [cursor=pointer]:
+                - /url: /shop/wireless-earbuds
+                - heading "Wireless Earbuds" [level=3] [ref=e294]
+              - paragraph [ref=e295]: Electronics
+              - generic [ref=e296]:
+                - generic [ref=e297]: ₹2,199
+                - generic [ref=e298]: ₹2,999
+                - generic [ref=e299]: 27% off
+              - paragraph [ref=e300]: Personalizable
+              - button "Add to Cart" [ref=e302] [cursor=pointer]
+          - generic [ref=e304]:
+            - link "Power Bank 20000mAh Power Bank 20000mAh 28% OFF Add to wishlist" [ref=e305] [cursor=pointer]:
+              - /url: /shop/power-bank-20000mah
+              - img "Power Bank 20000mAh" [ref=e306]
+              - img "Power Bank 20000mAh" [ref=e307]
+              - generic [ref=e308]: 28% OFF
+              - button "Add to wishlist" [ref=e310]
+            - generic [ref=e313]:
+              - link [ref=e314] [cursor=pointer]:
+                - /url: /shop/power-bank-20000mah
+                - heading "Power Bank 20000mAh" [level=3] [ref=e315]
+              - paragraph [ref=e316]: Powerbanks
+              - generic [ref=e317]:
+                - generic [ref=e318]: ₹1,799
+                - generic [ref=e319]: ₹2,499
+                - generic [ref=e320]: 28% off
+              - paragraph [ref=e321]: Personalizable
+              - button "Add to Cart" [ref=e323] [cursor=pointer]
+          - generic [ref=e325]:
+            - link "Metal Pen Set Metal Pen Set Best Seller Add to wishlist" [ref=e326] [cursor=pointer]:
+              - /url: /shop/metal-pen-set
+              - img "Metal Pen Set" [ref=e327]
+              - img "Metal Pen Set" [ref=e328]
+              - generic [ref=e329]: Best Seller
+              - button "Add to wishlist" [ref=e331]
+            - generic [ref=e334]:
+              - link [ref=e335] [cursor=pointer]:
+                - /url: /shop/metal-pen-set
+                - heading "Metal Pen Set" [level=3] [ref=e336]
+              - paragraph [ref=e337]: Metal Pens and Pen Box
+              - generic [ref=e338]: ₹599
+              - paragraph [ref=e340]: Personalizable
+              - button "Add to Cart" [ref=e342] [cursor=pointer]
+          - generic [ref=e344]:
+            - link "Visiting Card Holder Visiting Card Holder Best Seller Add to wishlist" [ref=e345] [cursor=pointer]:
+              - /url: /shop/visiting-card-holder
+              - img "Visiting Card Holder" [ref=e346]
+              - img "Visiting Card Holder" [ref=e347]
+              - generic [ref=e348]: Best Seller
+              - button "Add to wishlist" [ref=e350]
+            - generic [ref=e353]:
+              - link [ref=e354] [cursor=pointer]:
+                - /url: /shop/visiting-card-holder
+                - heading "Visiting Card Holder" [level=3] [ref=e355]
+              - paragraph [ref=e356]: Visiting Card Holders
+              - generic [ref=e357]: ₹449
+              - paragraph [ref=e359]: Personalizable
+              - button "Add to Cart" [ref=e361] [cursor=pointer]
+      - generic [ref=e364]:
+        - generic [ref=e365]:
+          - generic [ref=e366]:
+            - paragraph [ref=e367]: Limited Time
+            - heading "Flash Sale" [level=2] [ref=e368]
+            - paragraph [ref=e369]: Grab exclusive deals before they are gone. While stocks last.
+          - generic [ref=e374]:
+            - generic [ref=e375]: "05"
+            - generic [ref=e376]: ":"
+            - generic [ref=e377]: "22"
+            - generic [ref=e378]: ":"
+            - generic [ref=e379]: "18"
+        - generic [ref=e380]:
+          - generic [ref=e381]:
+            - generic [ref=e382]: 35% OFF
+            - generic [ref=e383]:
+              - link "Classic Stainless Steel Bottle Classic Stainless Steel Bottle 35% OFF Add to wishlist" [ref=e384] [cursor=pointer]:
+                - /url: /shop/classic-stainless-steel-bottle
+                - img "Classic Stainless Steel Bottle" [ref=e385]
+                - img "Classic Stainless Steel Bottle" [ref=e386]
+                - generic [ref=e387]: 35% OFF
+                - button "Add to wishlist" [ref=e389]
+              - generic [ref=e392]:
+                - link [ref=e393] [cursor=pointer]:
+                  - /url: /shop/classic-stainless-steel-bottle
+                  - heading "Classic Stainless Steel Bottle" [level=3] [ref=e394]
+                - paragraph [ref=e395]: Bottles and Flasks
+                - generic [ref=e396]:
+                  - generic [ref=e397]: ₹1,299
+                  - generic [ref=e398]: ₹1,999
+                  - generic [ref=e399]: 35% off
+                - paragraph [ref=e400]: Personalizable
+                - button "Add to Cart" [ref=e402] [cursor=pointer]
+          - generic [ref=e404]:
+            - generic [ref=e405]: 40% OFF
+            - generic [ref=e406]:
+              - link "Copper Water Bottle Copper Water Bottle 40% OFF Add to wishlist" [ref=e407] [cursor=pointer]:
+                - /url: /shop/copper-water-bottle
+                - img "Copper Water Bottle" [ref=e408]
+                - img "Copper Water Bottle" [ref=e409]
+                - generic [ref=e410]: 40% OFF
+                - button "Add to wishlist" [ref=e412]
+              - generic [ref=e415]:
+                - link [ref=e416] [cursor=pointer]:
+                  - /url: /shop/copper-water-bottle
+                  - heading "Copper Water Bottle" [level=3] [ref=e417]
+                - paragraph [ref=e418]: Bottles and Flasks
+                - generic [ref=e419]:
+                  - generic [ref=e420]: ₹899
+                  - generic [ref=e421]: ₹1,499
+                  - generic [ref=e422]: 40% off
+                - paragraph [ref=e423]: Personalizable
+                - button "Add to Cart" [ref=e425] [cursor=pointer]
+          - generic [ref=e427]:
+            - generic [ref=e428]: 37% OFF
+            - generic [ref=e429]:
+              - link "Insulated Coffee Tumbler Insulated Coffee Tumbler 37% OFF Add to wishlist" [ref=e430] [cursor=pointer]:
+                - /url: /shop/insulated-coffee-tumbler
+                - img "Insulated Coffee Tumbler" [ref=e431]
+                - img "Insulated Coffee Tumbler" [ref=e432]
+                - generic [ref=e433]: 37% OFF
+                - button "Add to wishlist" [ref=e435]
+              - generic [ref=e438]:
+                - link [ref=e439] [cursor=pointer]:
+                  - /url: /shop/insulated-coffee-tumbler
+                  - heading "Insulated Coffee Tumbler" [level=3] [ref=e440]
+                - paragraph [ref=e441]: Coffee Mugs and Tumblers
+                - generic [ref=e442]:
+                  - generic [ref=e443]: ₹749
+                  - generic [ref=e444]: ₹1,199
+                  - generic [ref=e445]: 38% off
+                - paragraph [ref=e446]: Personalizable
+                - button "Add to Cart" [ref=e448] [cursor=pointer]
+          - generic [ref=e450]:
+            - generic [ref=e451]: 24% OFF
+            - generic [ref=e452]:
+              - link "Premium Backpack Premium Backpack 24% OFF Add to wishlist" [ref=e453] [cursor=pointer]:
+                - /url: /shop/premium-backpack
+                - img "Premium Backpack" [ref=e454]
+                - img "Premium Backpack" [ref=e455]
+                - generic [ref=e456]: 24% OFF
+                - button "Add to wishlist" [ref=e458]
+              - generic [ref=e461]:
+                - link [ref=e462] [cursor=pointer]:
+                  - /url: /shop/premium-backpack
+                  - heading "Premium Backpack" [level=3] [ref=e463]
+                - paragraph [ref=e464]: Backpacks
+                - generic [ref=e465]:
+                  - generic [ref=e466]: ₹1,899
+                  - generic [ref=e467]: ₹2,499
+                  - generic [ref=e468]: 24% off
+                - paragraph [ref=e469]: Personalizable
+                - button "Add to Cart" [ref=e471] [cursor=pointer]
+          - generic [ref=e473]:
+            - generic [ref=e474]: 24% OFF
+            - generic [ref=e475]:
+              - link "Laptop Bag - Executive Laptop Bag - Executive 24% OFF Add to wishlist" [ref=e476] [cursor=pointer]:
+                - /url: /shop/laptop-bag-executive
+                - img "Laptop Bag - Executive" [ref=e477]
+                - img "Laptop Bag - Executive" [ref=e478]
+                - generic [ref=e479]: 24% OFF
+                - button "Add to wishlist" [ref=e481]
+              - generic [ref=e484]:
+                - link [ref=e485] [cursor=pointer]:
+                  - /url: /shop/laptop-bag-executive
+                  - heading "Laptop Bag - Executive" [level=3] [ref=e486]
+                - paragraph [ref=e487]: Laptop Bags
+                - generic [ref=e488]:
+                  - generic [ref=e489]: ₹2,499
+                  - generic [ref=e490]: ₹3,299
+                  - generic [ref=e491]: 24% off
+                - paragraph [ref=e492]: Personalizable
+                - button "Add to Cart" [ref=e494] [cursor=pointer]
+          - generic [ref=e496]:
+            - generic [ref=e497]: 27% OFF
+            - generic [ref=e498]:
+              - link "Wireless Earbuds Wireless Earbuds 27% OFF Add to wishlist" [ref=e499] [cursor=pointer]:
+                - /url: /shop/wireless-earbuds
+                - img "Wireless Earbuds" [ref=e500]
+                - img "Wireless Earbuds" [ref=e501]
+                - generic [ref=e502]: 27% OFF
+                - button "Add to wishlist" [ref=e504]
+              - generic [ref=e507]:
+                - link [ref=e508] [cursor=pointer]:
+                  - /url: /shop/wireless-earbuds
+                  - heading "Wireless Earbuds" [level=3] [ref=e509]
+                - paragraph [ref=e510]: Electronics
+                - generic [ref=e511]:
+                  - generic [ref=e512]: ₹2,199
+                  - generic [ref=e513]: ₹2,999
+                  - generic [ref=e514]: 27% off
+                - paragraph [ref=e515]: Personalizable
+                - button "Add to Cart" [ref=e517] [cursor=pointer]
+        - link "View All Deals" [ref=e520] [cursor=pointer]:
+          - /url: /shop
+      - generic [ref=e522]:
+        - generic [ref=e523]:
+          - paragraph [ref=e524]: Value Picks
+          - heading "Pocket-Friendly Gifts (Under ₹250)" [level=2] [ref=e525]
+          - paragraph [ref=e526]: Thoughtful gifts that fit every budget. Perfect for corporate bulk orders and personal gifting alike.
+        - generic [ref=e527]:
+          - generic [ref=e528]:
+            - generic [ref=e529]: Under ₹250
+            - generic [ref=e530]:
+              - link "Custom Keychain Custom Keychain New Add to wishlist" [ref=e531] [cursor=pointer]:
+                - /url: /shop/custom-keychain
+                - img "Custom Keychain" [ref=e532]
+                - img "Custom Keychain" [ref=e533]
+                - generic [ref=e534]: New
+                - button "Add to wishlist" [ref=e536]
+              - generic [ref=e539]:
+                - link [ref=e540] [cursor=pointer]:
+                  - /url: /shop/custom-keychain
+                  - heading "Custom Keychain" [level=3] [ref=e541]
+                - paragraph [ref=e542]: Custom Keychains
+                - generic [ref=e543]: ₹149
+                - paragraph [ref=e545]: Personalizable
+                - button "Add to Cart" [ref=e547] [cursor=pointer]
+          - generic [ref=e549]:
+            - generic [ref=e550]: Under ₹250
+            - generic [ref=e551]:
+              - link "Eco-Friendly Desk Coaster Set Eco-Friendly Desk Coaster Set New Add to wishlist" [ref=e552] [cursor=pointer]:
+                - /url: /shop/eco-desk-coaster-set
+                - img "Eco-Friendly Desk Coaster Set" [ref=e553]
+                - img "Eco-Friendly Desk Coaster Set" [ref=e554]
+                - generic [ref=e555]: New
+                - button "Add to wishlist" [ref=e557]
+              - generic [ref=e560]:
+                - link [ref=e561] [cursor=pointer]:
+                  - /url: /shop/eco-desk-coaster-set
+                  - heading "Eco-Friendly Desk Coaster Set" [level=3] [ref=e562]
+                - paragraph [ref=e563]: Desk Accessories
+                - generic [ref=e564]: ₹249
+                - paragraph [ref=e566]: Personalizable
+                - button "Add to Cart" [ref=e568] [cursor=pointer]
+          - generic [ref=e570]:
+            - generic [ref=e571]: Under ₹250
+            - generic [ref=e572]:
+              - link "Mini Succulent Planter Mini Succulent Planter New Add to wishlist" [ref=e573] [cursor=pointer]:
+                - /url: /shop/mini-succulent-planter
+                - img "Mini Succulent Planter" [ref=e574]
+                - img "Mini Succulent Planter" [ref=e575]
+                - generic [ref=e576]: New
+                - button "Add to wishlist" [ref=e578]
+              - generic [ref=e581]:
+                - link [ref=e582] [cursor=pointer]:
+                  - /url: /shop/mini-succulent-planter
+                  - heading "Mini Succulent Planter" [level=3] [ref=e583]
+                - paragraph [ref=e584]: Mini Planters
+                - generic [ref=e585]: ₹199
+                - paragraph [ref=e587]: Personalizable
+                - button "Add to Cart" [ref=e589] [cursor=pointer]
+          - generic [ref=e591]:
+            - generic [ref=e592]: Under ₹250
+            - generic [ref=e593]:
+              - link "Eco Pen Set Eco Pen Set New Add to wishlist" [ref=e594] [cursor=pointer]:
+                - /url: /shop/eco-pen-set
+                - img "Eco Pen Set" [ref=e595]
+                - img "Eco Pen Set" [ref=e596]
+                - generic [ref=e597]: New
+                - button "Add to wishlist" [ref=e599]
+              - generic [ref=e602]:
+                - link [ref=e603] [cursor=pointer]:
+                  - /url: /shop/eco-pen-set
+                  - heading "Eco Pen Set" [level=3] [ref=e604]
+                - paragraph [ref=e605]: Eco Pens
+                - generic [ref=e606]: ₹129
+                - paragraph [ref=e608]: Personalizable
+                - button "Add to Cart" [ref=e610] [cursor=pointer]
+        - link "View All Budget Gifts" [ref=e613] [cursor=pointer]:
+          - /url: /shop?price=under-250
+      - generic [ref=e615]:
+        - generic [ref=e616]:
+          - generic [ref=e617]:
+            - paragraph [ref=e618]: Just Arrived
+            - heading "New Arrivals" [level=2] [ref=e619]
+          - link "View All" [ref=e620] [cursor=pointer]:
+            - /url: /shop
+        - generic [ref=e622]:
+          - generic [ref=e623]:
+            - link "Insulated Coffee Tumbler Insulated Coffee Tumbler 37% OFF Add to wishlist" [ref=e624] [cursor=pointer]:
+              - /url: /shop/insulated-coffee-tumbler
+              - img "Insulated Coffee Tumbler" [ref=e625]
+              - img "Insulated Coffee Tumbler" [ref=e626]
+              - generic [ref=e627]: 37% OFF
+              - button "Add to wishlist" [ref=e629]
+            - generic [ref=e632]:
+              - link [ref=e633] [cursor=pointer]:
+                - /url: /shop/insulated-coffee-tumbler
+                - heading "Insulated Coffee Tumbler" [level=3] [ref=e634]
+              - paragraph [ref=e635]: Coffee Mugs and Tumblers
+              - generic [ref=e636]:
+                - generic [ref=e637]: ₹749
+                - generic [ref=e638]: ₹1,199
+                - generic [ref=e639]: 38% off
+              - paragraph [ref=e640]: Personalizable
+              - button "Add to Cart" [ref=e642] [cursor=pointer]
+          - generic [ref=e644]:
+            - link "Premium Backpack Premium Backpack 24% OFF Add to wishlist" [ref=e645] [cursor=pointer]:
+              - /url: /shop/premium-backpack
+              - img "Premium Backpack" [ref=e646]
+              - img "Premium Backpack" [ref=e647]
+              - generic [ref=e648]: 24% OFF
+              - button "Add to wishlist" [ref=e650]
+            - generic [ref=e653]:
+              - link [ref=e654] [cursor=pointer]:
+                - /url: /shop/premium-backpack
+                - heading "Premium Backpack" [level=3] [ref=e655]
+              - paragraph [ref=e656]: Backpacks
+              - generic [ref=e657]:
+                - generic [ref=e658]: ₹1,899
+                - generic [ref=e659]: ₹2,499
+                - generic [ref=e660]: 24% off
+              - paragraph [ref=e661]: Personalizable
+              - button "Add to Cart" [ref=e663] [cursor=pointer]
+          - generic [ref=e665]:
+            - link "Laptop Bag - Executive Laptop Bag - Executive 24% OFF Add to wishlist" [ref=e666] [cursor=pointer]:
+              - /url: /shop/laptop-bag-executive
+              - img "Laptop Bag - Executive" [ref=e667]
+              - img "Laptop Bag - Executive" [ref=e668]
+              - generic [ref=e669]: 24% OFF
+              - button "Add to wishlist" [ref=e671]
+            - generic [ref=e674]:
+              - link [ref=e675] [cursor=pointer]:
+                - /url: /shop/laptop-bag-executive
+                - heading "Laptop Bag - Executive" [level=3] [ref=e676]
+              - paragraph [ref=e677]: Laptop Bags
+              - generic [ref=e678]:
+                - generic [ref=e679]: ₹2,499
+                - generic [ref=e680]: ₹3,299
+                - generic [ref=e681]: 24% off
+              - paragraph [ref=e682]: Personalizable
+              - button "Add to Cart" [ref=e684] [cursor=pointer]
+          - generic [ref=e686]:
+            - link "Wireless Earbuds Wireless Earbuds 27% OFF Add to wishlist" [ref=e687] [cursor=pointer]:
+              - /url: /shop/wireless-earbuds
+              - img "Wireless Earbuds" [ref=e688]
+              - img "Wireless Earbuds" [ref=e689]
+              - generic [ref=e690]: 27% OFF
+              - button "Add to wishlist" [ref=e692]
+            - generic [ref=e695]:
+              - link [ref=e696] [cursor=pointer]:
+                - /url: /shop/wireless-earbuds
+                - heading "Wireless Earbuds" [level=3] [ref=e697]
+              - paragraph [ref=e698]: Electronics
+              - generic [ref=e699]:
+                - generic [ref=e700]: ₹2,199
+                - generic [ref=e701]: ₹2,999
+                - generic [ref=e702]: 27% off
+              - paragraph [ref=e703]: Personalizable
+              - button "Add to Cart" [ref=e705] [cursor=pointer]
+          - generic [ref=e707]:
+            - link "Power Bank 20000mAh Power Bank 20000mAh 28% OFF Add to wishlist" [ref=e708] [cursor=pointer]:
+              - /url: /shop/power-bank-20000mah
+              - img "Power Bank 20000mAh" [ref=e709]
+              - img "Power Bank 20000mAh" [ref=e710]
+              - generic [ref=e711]: 28% OFF
+              - button "Add to wishlist" [ref=e713]
+            - generic [ref=e716]:
+              - link [ref=e717] [cursor=pointer]:
+                - /url: /shop/power-bank-20000mah
+                - heading "Power Bank 20000mAh" [level=3] [ref=e718]
+              - paragraph [ref=e719]: Powerbanks
+              - generic [ref=e720]:
+                - generic [ref=e721]: ₹1,799
+                - generic [ref=e722]: ₹2,499
+                - generic [ref=e723]: 28% off
+              - paragraph [ref=e724]: Personalizable
+              - button "Add to Cart" [ref=e726] [cursor=pointer]
+          - generic [ref=e728]:
+            - link "Metal Mobile Stand Metal Mobile Stand Best Seller Add to wishlist" [ref=e729] [cursor=pointer]:
+              - /url: /shop/metal-mobile-stand
+              - img "Metal Mobile Stand" [ref=e730]
+              - img "Metal Mobile Stand" [ref=e731]
+              - generic [ref=e732]: Best Seller
+              - button "Add to wishlist" [ref=e734]
+            - generic [ref=e737]:
+              - link [ref=e738] [cursor=pointer]:
+                - /url: /shop/metal-mobile-stand
+                - heading "Metal Mobile Stand" [level=3] [ref=e739]
+              - paragraph [ref=e740]: Metal Mobile Stands
+              - generic [ref=e741]: ₹349
+              - button "Add to Cart" [ref=e744] [cursor=pointer]
+          - generic [ref=e746]:
+            - link "Pen Box Executive Pen Box Executive 25% OFF Add to wishlist" [ref=e747] [cursor=pointer]:
+              - /url: /shop/pen-box-executive
+              - img "Pen Box Executive" [ref=e748]
+              - img "Pen Box Executive" [ref=e749]
+              - generic [ref=e750]: 25% OFF
+              - button "Add to wishlist" [ref=e752]
+            - generic [ref=e755]:
+              - link [ref=e756] [cursor=pointer]:
+                - /url: /shop/pen-box-executive
+                - heading "Pen Box Executive" [level=3] [ref=e757]
+              - paragraph [ref=e758]: Metal Pens and Pen Box
+              - generic [ref=e759]:
+                - generic [ref=e760]: ₹1,199
+                - generic [ref=e761]: ₹1,599
+                - generic [ref=e762]: 25% off
+              - paragraph [ref=e763]: Personalizable
+              - button "Add to Cart" [ref=e765] [cursor=pointer]
+          - generic [ref=e767]:
+            - link "Custom Keychain Custom Keychain New Add to wishlist" [ref=e768] [cursor=pointer]:
+              - /url: /shop/custom-keychain
+              - img "Custom Keychain" [ref=e769]
+              - img "Custom Keychain" [ref=e770]
+              - generic [ref=e771]: New
+              - button "Add to wishlist" [ref=e773]
+            - generic [ref=e776]:
+              - link [ref=e777] [cursor=pointer]:
+                - /url: /shop/custom-keychain
+                - heading "Custom Keychain" [level=3] [ref=e778]
+              - paragraph [ref=e779]: Custom Keychains
+              - generic [ref=e780]: ₹149
+              - paragraph [ref=e782]: Personalizable
+              - button "Add to Cart" [ref=e784] [cursor=pointer]
+      - generic [ref=e787]:
+        - generic [ref=e788]:
+          - paragraph [ref=e789]: Moments
+          - heading "Shop by Occasion" [level=2] [ref=e790]
+          - paragraph [ref=e791]: Find the perfect gift for every moment
+        - generic [ref=e792]:
+          - link [ref=e793] [cursor=pointer]:
+            - /url: /shop?occasion=birthday
+            - heading "Birthday" [level=3] [ref=e799]
+            - paragraph [ref=e800]: Make their day special
+          - link [ref=e801] [cursor=pointer]:
+            - /url: /shop?occasion=corporate
+            - heading "Corporate / Employee Gifting" [level=3] [ref=e806]
+            - paragraph [ref=e807]: Appreciate your team
+          - link [ref=e808] [cursor=pointer]:
+            - /url: /shop?occasion=festival
+            - heading "Festivals" [level=3] [ref=e816]
+            - paragraph [ref=e817]: Diwali, Rakhi and more
+          - link [ref=e818] [cursor=pointer]:
+            - /url: /shop?occasion=celebrations
+            - heading "Celebrations" [level=3] [ref=e822]
+            - paragraph [ref=e823]: Milestones and achievements
+          - link [ref=e824] [cursor=pointer]:
+            - /url: /shop?occasion=thank-you
+            - heading "Thank You" [level=3] [ref=e828]
+            - paragraph [ref=e829]: Show appreciation
+      - generic [ref=e832]:
+        - generic [ref=e833]:
+          - heading "Pan-India Express Shipping" [level=3] [ref=e840]
+          - paragraph [ref=e841]: Free delivery on orders above ₹999
+        - generic [ref=e842]:
+          - heading "Free Custom Logo Printing" [level=3] [ref=e848]
+          - paragraph [ref=e849]: On bulk orders of 25+ units
+        - generic [ref=e850]:
+          - heading "100% Secure Checkout" [level=3] [ref=e855]
+          - paragraph [ref=e856]: SSL encrypted payments
+        - generic [ref=e857]:
+          - heading "4.9/5 Rating" [level=3] [ref=e861]
+          - paragraph [ref=e862]: Over 50,000+ gifts delivered
+      - generic [ref=e865]:
+        - generic [ref=e866]:
+          - paragraph [ref=e867]: For Enterprises
+          - heading "Planning Gifting for Your Enterprise Team?" [level=2] [ref=e868]
+          - paragraph [ref=e869]: Get custom branding, bulk pricing, and dedicated support for your corporate gifting needs.
+        - button "Get Quick Quote" [ref=e870] [cursor=pointer]
+      - generic [ref=e875]:
+        - paragraph [ref=e876]: Stay Connected
+        - heading "Stay Inspired" [level=2] [ref=e877]
+        - paragraph [ref=e878]: Subscribe for curated gifting ideas, new arrivals, and exclusive offers.
+        - generic [ref=e879]:
+          - textbox "Enter your email" [ref=e880]
+          - button "Subscribe" [ref=e881] [cursor=pointer]
+  - contentinfo [ref=e882]:
+    - generic [ref=e883]:
+      - generic [ref=e884]:
+        - generic [ref=e885]:
+          - link [ref=e886] [cursor=pointer]:
+            - /url: /
+            - img "Impackt Gifting Solutions" [ref=e887]
+          - paragraph [ref=e888]: Thoughtfully curated gifts for life's special moments, celebrations, and the people who matter.
+          - generic [ref=e889]:
+            - link "Facebook" [ref=e890] [cursor=pointer]:
+              - /url: https://www.facebook.com/impacktgiftingsolutions
+            - link "Instagram" [ref=e893] [cursor=pointer]:
+              - /url: https://www.instagram.com/impacktgiftingsolutions/
+            - link "LinkedIn" [ref=e896] [cursor=pointer]:
+              - /url: https://www.linkedin.com/company/impackt-gifting-solutions
+        - generic [ref=e899]:
+          - heading "Shop" [level=4] [ref=e900]
+          - list [ref=e901]:
+            - listitem [ref=e902]:
+              - link "All Products" [ref=e903] [cursor=pointer]:
+                - /url: /shop
+            - listitem [ref=e904]:
+              - link "Drinkware" [ref=e905] [cursor=pointer]:
+                - /url: /shop?category=drinkware
+            - listitem [ref=e906]:
+              - link "Bags" [ref=e907] [cursor=pointer]:
+                - /url: /shop?category=bags
+            - listitem [ref=e908]:
+              - link "Electronics" [ref=e909] [cursor=pointer]:
+                - /url: /shop?category=electronics-tech
+            - listitem [ref=e910]:
+              - link "Promotional Gifting" [ref=e911] [cursor=pointer]:
+                - /url: /shop?category=promotional-gifting
+        - generic [ref=e912]:
+          - heading "Contact" [level=4] [ref=e913]
+          - list [ref=e914]:
+            - listitem [ref=e915]: 19A, Ram Mohan Dutta Rd, Sreepally, Bhowanipore, Kolkata, West Bengal 700020
+            - listitem [ref=e916]:
+              - link "+91 73372 88823" [ref=e917] [cursor=pointer]:
+                - /url: tel:+91 73372 88823
+            - listitem [ref=e918]:
+              - link "info@impacktgifting.com" [ref=e919] [cursor=pointer]:
+                - /url: mailto:info@impacktgifting.com
+      - generic [ref=e920]:
+        - paragraph [ref=e921]: © 2026 Impackt Gifting Solutions. All rights reserved.
+        - generic [ref=e922]:
+          - link "Privacy Policy" [ref=e923] [cursor=pointer]:
+            - /url: /privacy-policy
+          - link "Terms and Conditions" [ref=e924] [cursor=pointer]:
+            - /url: /terms-and-conditions

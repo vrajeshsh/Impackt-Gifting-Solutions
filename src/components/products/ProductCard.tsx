@@ -16,6 +16,7 @@ export default function ProductCard({ product }: ProductCardProps) {
   const { addToCart } = useCart();
   const { addToWishlist, removeFromWishlist, isInWishlist } = useWishlist();
   const [imgError, setImgError] = useState(false);
+  const [hoverImgError, setHoverImgError] = useState(false);
 
   const inWishlist = isInWishlist(product.id);
 
@@ -37,23 +38,27 @@ export default function ProductCard({ product }: ProductCardProps) {
         ? { label: 'New', variant: 'new' }
         : null;
 
+  const hasHoverImage = product.images[1] && !hoverImgError && !imgError;
+  const primarySrc = imgError ? FALLBACK_IMAGE : product.images[0];
+  const hoverSrc = hoverImgError ? FALLBACK_IMAGE : (product.images[1] || FALLBACK_IMAGE);
+
   return (
     <div className="group bg-white dark:bg-stone-900 border border-soft-beige/30 dark:border-stone-800 rounded-lg overflow-hidden transition-colors duration-300 h-full flex flex-col">
       <Link href={`/shop/${product.slug}`} className="block relative aspect-square overflow-hidden bg-cream dark:bg-stone-800 flex-shrink-0 rounded-t-lg">
         <img
           loading="lazy"
-          src={imgError ? FALLBACK_IMAGE : product.images[0]}
+          src={primarySrc}
           alt={product.name}
           onError={() => setImgError(true)}
           className="w-full h-full object-cover transition-transform duration-[1.2s] ease-out group-hover:scale-105"
         />
         
-        {product.images[1] && !imgError && (
+        {hasHoverImage && (
           <img
             loading="lazy"
-            src={product.images[1]}
+            src={hoverSrc}
             alt={product.name}
-            onError={() => {}}
+            onError={() => setHoverImgError(true)}
             className="absolute inset-0 w-full h-full object-cover transition-opacity duration-700 ease-out opacity-0 group-hover:opacity-100"
           />
         )}

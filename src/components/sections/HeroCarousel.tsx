@@ -73,6 +73,13 @@ export default function HeroCarousel() {
   const slide = slides[current];
   const dealProduct = slide.dealProduct;
 
+  const TitleTag = ({ text, isActive }: { text: string; isActive: boolean }) =>
+    isActive ? (
+      <h1 className="font-display text-5xl md:text-7xl lg:text-8xl text-ivory mb-8 leading-[0.95]">{text}</h1>
+    ) : (
+      <span className="font-display text-5xl md:text-7xl lg:text-8xl text-ivory mb-8 leading-[0.95]">{text}</span>
+    );
+
   return (
     <section className="relative h-[90vh] min-h-[600px] max-h-[900px] overflow-hidden">
       {slides.map((s, index) => (
@@ -94,9 +101,7 @@ export default function HeroCarousel() {
                 <p className="text-accent text-sm md:text-base font-medium uppercase tracking-[0.3em] mb-6">
                   {s.subtitle}
                 </p>
-                <h1 className="font-display text-5xl md:text-7xl lg:text-8xl text-ivory mb-8 leading-[0.95]">
-                  {s.title}
-                </h1>
+                <TitleTag text={s.title} isActive={index === current} />
                 
                 {dealProduct && (
                   <div className="bg-white/10 dark:bg-stone-900/80 backdrop-blur-md border border-white/20 dark:border-stone-700 p-4 md:p-6 mb-8 max-w-md">

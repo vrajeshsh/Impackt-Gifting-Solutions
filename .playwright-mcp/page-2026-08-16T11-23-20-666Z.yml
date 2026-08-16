@@ -1,0 +1,193 @@
+- generic [ref=e1]:
+  - alert [ref=e925]
+  - banner [ref=e926]:
+    - generic [ref=e928]:
+      - link [ref=e930] [cursor=pointer]:
+        - /url: /
+        - img "Impackt Gifting Solutions" [ref=e931]
+      - navigation [ref=e932]:
+        - link "Shop" [ref=e933] [cursor=pointer]:
+          - /url: /shop
+        - generic [ref=e934]:
+          - button "Categories" [ref=e935] [cursor=pointer]
+          - generic [ref=e1850]:
+            - link "Drinkware" [active] [ref=e1851] [cursor=pointer]:
+              - /url: /shop?category=drinkware
+            - link "Bags" [ref=e1852] [cursor=pointer]:
+              - /url: /shop?category=bags
+            - link "Electronics and Tech" [ref=e1853] [cursor=pointer]:
+              - /url: /shop?category=electronics-tech
+            - link "Promotional Gifting" [ref=e1854] [cursor=pointer]:
+              - /url: /shop?category=promotional-gifting
+            - link "Apparel" [ref=e1855] [cursor=pointer]:
+              - /url: /shop?category=apparel
+        - link "Corporate Gifting" [ref=e936] [cursor=pointer]:
+          - /url: /corporate-gifting
+        - link "About" [ref=e937] [cursor=pointer]:
+          - /url: /about
+        - link "Contact" [ref=e938] [cursor=pointer]:
+          - /url: /contact
+      - generic [ref=e939]:
+        - button "Search" [ref=e940] [cursor=pointer]
+        - button "Account" [ref=e945] [cursor=pointer]
+        - button "Cart" [ref=e949] [cursor=pointer]
+  - main [ref=e953]:
+    - generic [ref=e1856]:
+      - generic [ref=e1858]:
+        - paragraph [ref=e1859]: Our Collection
+        - heading "Shop" [level=1] [ref=e1860]
+        - paragraph [ref=e1861]: Discover our collection of premium gifts for every occasion
+      - generic [ref=e1862]:
+        - generic [ref=e1863]:
+          - generic [ref=e1864]: 4 products
+          - generic [ref=e1866]:
+            - button "Clear all" [ref=e1867] [cursor=pointer]
+            - textbox "Search products..." [ref=e1872]
+        - generic [ref=e1876]:
+          - complementary [ref=e1877]:
+            - generic [ref=e1879]:
+              - generic [ref=e1880]:
+                - heading "Categories" [level=3] [ref=e1881]
+                - generic [ref=e1882]:
+                  - button "All Categories" [ref=e1883] [cursor=pointer]
+                  - button "Drinkware" [ref=e1884] [cursor=pointer]
+                  - button "Bags" [ref=e1885] [cursor=pointer]
+                  - button "Electronics and Tech" [ref=e1886] [cursor=pointer]
+                  - button "Promotional Gifting" [ref=e1887] [cursor=pointer]
+                  - button "Apparel" [ref=e1888] [cursor=pointer]
+              - generic [ref=e1889]:
+                - heading "Occasions" [level=3] [ref=e1890]
+                - generic [ref=e1891]:
+                  - button "All Occasions" [ref=e1892] [cursor=pointer]
+                  - button "Birthday" [ref=e1893] [cursor=pointer]
+                  - button "Corporate / Employee Gifting" [ref=e1894] [cursor=pointer]
+                  - button "Festivals" [ref=e1895] [cursor=pointer]
+                  - button "Celebrations" [ref=e1896] [cursor=pointer]
+                  - button "Thank You" [ref=e1897] [cursor=pointer]
+              - generic [ref=e1898]:
+                - heading "Price" [level=3] [ref=e1899]
+                - generic [ref=e1900]:
+                  - button "All Prices" [ref=e1901] [cursor=pointer]
+                  - button "Under ₹500" [ref=e1902] [cursor=pointer]
+                  - button "₹500 – ₹1,000" [ref=e1903] [cursor=pointer]
+                  - button "₹1,000 – ₹2,500" [ref=e1904] [cursor=pointer]
+                  - button "₹2,500 – ₹5,000" [ref=e1905] [cursor=pointer]
+                  - button "₹5,000+" [ref=e1906] [cursor=pointer]
+          - generic [ref=e1908]:
+            - generic [ref=e1910]:
+              - link "Classic Stainless Steel Bottle Classic Stainless Steel Bottle 35% OFF Add to wishlist" [ref=e1911] [cursor=pointer]:
+                - /url: /shop/classic-stainless-steel-bottle
+                - img "Classic Stainless Steel Bottle" [ref=e1912]
+                - img "Classic Stainless Steel Bottle" [ref=e1913]
+                - generic [ref=e1914]: 35% OFF
+                - button "Add to wishlist" [ref=e1916]
+              - generic [ref=e1919]:
+                - link [ref=e1920] [cursor=pointer]:
+                  - /url: /shop/classic-stainless-steel-bottle
+                  - heading "Classic Stainless Steel Bottle" [level=3] [ref=e1921]
+                - paragraph [ref=e1922]: Bottles and Flasks
+                - generic [ref=e1923]:
+                  - generic [ref=e1924]: ₹1,299
+                  - generic [ref=e1925]: ₹1,999
+                  - generic [ref=e1926]: 35% off
+                - paragraph [ref=e1927]: Personalizable
+                - button "Add to Cart" [ref=e1929] [cursor=pointer]
+            - generic [ref=e1932]:
+              - link "Copper Water Bottle 40% OFF Add to wishlist" [ref=e1933] [cursor=pointer]:
+                - /url: /shop/copper-water-bottle
+                - img "Copper Water Bottle" [ref=e1934]
+                - generic [ref=e1935]: 40% OFF
+                - button "Add to wishlist" [ref=e1937]
+              - generic [ref=e1940]:
+                - link [ref=e1941] [cursor=pointer]:
+                  - /url: /shop/copper-water-bottle
+                  - heading "Copper Water Bottle" [level=3] [ref=e1942]
+                - paragraph [ref=e1943]: Bottles and Flasks
+                - generic [ref=e1944]:
+                  - generic [ref=e1945]: ₹899
+                  - generic [ref=e1946]: ₹1,499
+                  - generic [ref=e1947]: 40% off
+                - paragraph [ref=e1948]: Personalizable
+                - button "Add to Cart" [ref=e1950] [cursor=pointer]
+            - generic [ref=e1953]:
+              - link "Insulated Coffee Tumbler Insulated Coffee Tumbler 37% OFF Add to wishlist" [ref=e1954] [cursor=pointer]:
+                - /url: /shop/insulated-coffee-tumbler
+                - img "Insulated Coffee Tumbler" [ref=e1955]
+                - img "Insulated Coffee Tumbler" [ref=e1956]
+                - generic [ref=e1957]: 37% OFF
+                - button "Add to wishlist" [ref=e1959]
+              - generic [ref=e1962]:
+                - link [ref=e1963] [cursor=pointer]:
+                  - /url: /shop/insulated-coffee-tumbler
+                  - heading "Insulated Coffee Tumbler" [level=3] [ref=e1964]
+                - paragraph [ref=e1965]: Coffee Mugs and Tumblers
+                - generic [ref=e1966]:
+                  - generic [ref=e1967]: ₹749
+                  - generic [ref=e1968]: ₹1,199
+                  - generic [ref=e1969]: 38% off
+                - paragraph [ref=e1970]: Personalizable
+                - button "Add to Cart" [ref=e1972] [cursor=pointer]
+            - generic [ref=e1975]:
+              - link [ref=e1976] [cursor=pointer]:
+                - /url: /shop/designer-ceramic-mug
+                - img "Designer Ceramic Mug" [ref=e1977]
+                - img "Designer Ceramic Mug" [ref=e1978]
+                - button "Add to wishlist" [ref=e1980]
+              - generic [ref=e1983]:
+                - link [ref=e1984] [cursor=pointer]:
+                  - /url: /shop/designer-ceramic-mug
+                  - heading "Designer Ceramic Mug" [level=3] [ref=e1985]
+                - paragraph [ref=e1986]: Coffee Mugs and Tumblers
+                - generic [ref=e1987]: ₹499
+                - paragraph [ref=e1989]: Personalizable
+                - button "Add to Cart" [ref=e1991] [cursor=pointer]
+  - contentinfo [ref=e1806]:
+    - generic [ref=e1807]:
+      - generic [ref=e1808]:
+        - generic [ref=e1809]:
+          - link [ref=e1810] [cursor=pointer]:
+            - /url: /
+            - img "Impackt Gifting Solutions" [ref=e1811]
+          - paragraph [ref=e1812]: Thoughtfully curated gifts for life's special moments, celebrations, and the people who matter.
+          - generic [ref=e1813]:
+            - link "Facebook" [ref=e1814] [cursor=pointer]:
+              - /url: https://www.facebook.com/impacktgiftingsolutions
+            - link "Instagram" [ref=e1817] [cursor=pointer]:
+              - /url: https://www.instagram.com/impacktgiftingsolutions/
+            - link "LinkedIn" [ref=e1820] [cursor=pointer]:
+              - /url: https://www.linkedin.com/company/impackt-gifting-solutions
+        - generic [ref=e1823]:
+          - heading "Shop" [level=4] [ref=e1824]
+          - list [ref=e1825]:
+            - listitem [ref=e1826]:
+              - link "All Products" [ref=e1827] [cursor=pointer]:
+                - /url: /shop
+            - listitem [ref=e1828]:
+              - link "Drinkware" [ref=e1829] [cursor=pointer]:
+                - /url: /shop?category=drinkware
+            - listitem [ref=e1830]:
+              - link "Bags" [ref=e1831] [cursor=pointer]:
+                - /url: /shop?category=bags
+            - listitem [ref=e1832]:
+              - link "Electronics" [ref=e1833] [cursor=pointer]:
+                - /url: /shop?category=electronics-tech
+            - listitem [ref=e1834]:
+              - link "Promotional Gifting" [ref=e1835] [cursor=pointer]:
+                - /url: /shop?category=promotional-gifting
+        - generic [ref=e1836]:
+          - heading "Contact" [level=4] [ref=e1837]
+          - list [ref=e1838]:
+            - listitem [ref=e1839]: 19A, Ram Mohan Dutta Rd, Sreepally, Bhowanipore, Kolkata, West Bengal 700020
+            - listitem [ref=e1840]:
+              - link "+91 73372 88823" [ref=e1841] [cursor=pointer]:
+                - /url: tel:+91 73372 88823
+            - listitem [ref=e1842]:
+              - link "info@impacktgifting.com" [ref=e1843] [cursor=pointer]:
+                - /url: mailto:info@impacktgifting.com
+      - generic [ref=e1844]:
+        - paragraph [ref=e1845]: © 2026 Impackt Gifting Solutions. All rights reserved.
+        - generic [ref=e1846]:
+          - link "Privacy Policy" [ref=e1847] [cursor=pointer]:
+            - /url: /privacy-policy
+          - link "Terms and Conditions" [ref=e1848] [cursor=pointer]:
+            - /url: /terms-and-conditions

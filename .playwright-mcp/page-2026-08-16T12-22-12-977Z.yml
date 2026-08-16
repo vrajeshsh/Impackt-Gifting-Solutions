@@ -1,0 +1,195 @@
+- generic [active] [ref=f5e1]:
+  - banner [ref=f5e2]:
+    - generic [ref=f5e4]:
+      - generic [ref=f5e5]:
+        - button "Toggle menu" [ref=f5e6]
+        - link [ref=f5e8] [cursor=pointer]:
+          - /url: /
+          - img "Impackt Gifting Solutions" [ref=f5e9]
+      - navigation [ref=f5e10]:
+        - link "Shop" [ref=f5e11] [cursor=pointer]:
+          - /url: /shop
+        - generic [ref=f5e12]:
+          - button "Categories" [ref=f5e13]
+          - generic [ref=f5e15]:
+            - link "Drinkware" [ref=f5e16] [cursor=pointer]:
+              - /url: /shop?category=drinkware
+            - link "Bags" [ref=f5e17] [cursor=pointer]:
+              - /url: /shop?category=bags
+            - link "Electronics and Tech" [ref=f5e18] [cursor=pointer]:
+              - /url: /shop?category=electronics-tech
+            - link "Promotional Gifting" [ref=f5e19] [cursor=pointer]:
+              - /url: /shop?category=promotional-gifting
+            - link "Apparel" [ref=f5e20] [cursor=pointer]:
+              - /url: /shop?category=apparel
+        - link "Corporate Gifting" [ref=f5e21] [cursor=pointer]:
+          - /url: /corporate-gifting
+        - link "About" [ref=f5e22] [cursor=pointer]:
+          - /url: /about
+        - link "Contact" [ref=f5e23] [cursor=pointer]:
+          - /url: /contact
+      - generic [ref=f5e24]:
+        - button "Search" [ref=f5e25]
+        - button "Account" [ref=f5e30]
+        - button "Cart" [ref=f5e34]
+  - main [ref=f5e38]:
+    - generic [ref=f5e39]:
+      - generic [ref=f5e40]:
+        - img "Corporate gifting" [ref=f5e42]
+        - generic [ref=f5e43]:
+          - paragraph [ref=f5e44]: For Business
+          - heading "Corporate Gifting, Made Remarkable." [level=1] [ref=f5e45]: Corporate Gifting,Made Remarkable.
+          - paragraph [ref=f5e46]: Premium curated gifts that strengthen relationships, celebrate milestones, and reflect your brand.
+          - link "Request a Quote" [ref=f5e47] [cursor=pointer]:
+            - /url: "#quote-form"
+      - generic [ref=f5e51]:
+        - generic [ref=f5e52]:
+          - paragraph [ref=f5e53]: What We Offer
+          - heading "End-to-End Solutions" [level=2] [ref=f5e54]
+          - paragraph [ref=f5e55]: Tailored corporate gifting solutions for every business need
+        - generic [ref=f5e56]:
+          - generic [ref=f5e57]:
+            - heading "Employee Gifting" [level=3] [ref=f5e62]
+            - paragraph [ref=f5e63]: Onboarding kits, milestone celebrations, and festival gifts that make your team feel valued.
+          - generic [ref=f5e64]:
+            - heading "Client Gifting" [level=3] [ref=f5e69]
+            - paragraph [ref=f5e70]: Strengthen business relationships with thoughtful, premium gifts that leave a lasting impression.
+          - generic [ref=f5e71]:
+            - heading "Bulk Gifting" [level=3] [ref=f5e76]
+            - paragraph [ref=f5e77]: Seamless handling of large-volume orders with consistent quality and timely delivery.
+          - generic [ref=f5e78]:
+            - heading "Event Gifting" [level=3] [ref=f5e83]
+            - paragraph [ref=f5e84]: Conference swag, seminar gifts, and event hampers customized for your audience.
+          - generic [ref=f5e85]:
+            - heading "Festive Gifting" [level=3] [ref=f5e90]
+            - paragraph [ref=f5e91]: Diwali, Christmas, New Year, and festive hampers curated with seasonal flair.
+          - generic [ref=f5e92]:
+            - heading "Custom Branding" [level=3] [ref=f5e97]
+            - paragraph [ref=f5e98]: Logo embossing, custom packaging, and branded inserts that align with your identity.
+      - generic [ref=f5e101]:
+        - generic [ref=f5e102]:
+          - paragraph [ref=f5e103]: Get Started
+          - heading "Request a Quote" [level=2] [ref=f5e104]
+          - paragraph [ref=f5e105]: Tell us about your requirements and we will get back to you within 24 hours.
+        - generic [ref=f5e106]:
+          - generic [ref=f5e107]:
+            - generic [ref=f5e108]:
+              - text: Full Name *
+              - textbox [ref=f5e109]
+            - generic [ref=f5e110]:
+              - text: Company Name *
+              - textbox [ref=f5e111]
+            - generic [ref=f5e112]:
+              - text: Work Email *
+              - textbox [ref=f5e113]
+            - generic [ref=f5e114]:
+              - text: Phone Number *
+              - textbox "+91 98765 43210" [ref=f5e115]
+            - generic [ref=f5e116]:
+              - text: Number of Gifts *
+              - spinbutton [ref=f5e117]
+            - generic [ref=f5e118]:
+              - text: Budget Per Gift (₹) *
+              - textbox "e.g., ₹1,000" [ref=f5e119]
+            - generic [ref=f5e120]:
+              - text: Event Type *
+              - combobox [ref=f5e121]:
+                - option "Select event type" [selected]
+                - option "Employee Onboarding"
+                - option "Employee Appreciation"
+                - option "Client Gifting"
+                - option "Festive Gifting"
+                - option "Conference / Event"
+                - option "Other"
+            - generic [ref=f5e122]:
+              - text: Required Delivery Date
+              - textbox [ref=f5e123]
+            - generic [ref=f5e124]:
+              - text: Preferred Product Category
+              - combobox [ref=f5e125]:
+                - option "Select category" [selected]
+                - option "Drinkware"
+                - option "Bags"
+                - option "Electronics and Tech"
+                - option "Promotional Gifting"
+                - option "Apparel"
+            - generic [ref=f5e126]:
+              - text: Custom Branding Required?
+              - generic [ref=f5e127]:
+                - generic [ref=f5e128]:
+                  - radio "Yes" [ref=f5e129]
+                  - text: "Yes"
+                - generic [ref=f5e130]:
+                  - radio "No" [ref=f5e131]
+                  - text: "No"
+            - generic [ref=f5e132]:
+              - text: Packaging Requirements
+              - textbox [ref=f5e133]
+            - generic [ref=f5e134]:
+              - text: Additional Requirements
+              - textbox [ref=f5e135]
+          - button "Submit Inquiry" [ref=f5e136]
+      - generic [ref=f5e138]:
+        - generic [ref=f5e139]:
+          - paragraph [ref=f5e140]: Why Us
+          - heading "The Impackt Difference" [level=2] [ref=f5e141]
+        - generic [ref=f5e142]:
+          - generic [ref=f5e143]:
+            - heading "60-Year Legacy" [level=3] [ref=f5e144]
+            - paragraph [ref=f5e145]: Built on six decades of trust and excellence in gifting.
+          - generic [ref=f5e146]:
+            - heading "Premium Quality" [level=3] [ref=f5e147]
+            - paragraph [ref=f5e148]: Curated products from trusted suppliers and artisans.
+          - generic [ref=f5e149]:
+            - heading "End-to-End Service" [level=3] [ref=f5e150]
+            - paragraph [ref=f5e151]: From concept to delivery, we handle everything.
+  - contentinfo [ref=f5e152]:
+    - generic [ref=f5e153]:
+      - generic [ref=f5e154]:
+        - generic [ref=f5e155]:
+          - link [ref=f5e156] [cursor=pointer]:
+            - /url: /
+            - img "Impackt Gifting Solutions" [ref=f5e157]
+          - paragraph [ref=f5e158]: Thoughtfully curated gifts for life's special moments, celebrations, and the people who matter.
+          - generic [ref=f5e159]:
+            - link "Facebook" [ref=f5e160] [cursor=pointer]:
+              - /url: https://www.facebook.com/impacktgiftingsolutions
+            - link "Instagram" [ref=f5e163] [cursor=pointer]:
+              - /url: https://www.instagram.com/impacktgiftingsolutions/
+            - link "LinkedIn" [ref=f5e166] [cursor=pointer]:
+              - /url: https://www.linkedin.com/company/impackt-gifting-solutions
+        - generic [ref=f5e169]:
+          - heading "Shop" [level=4] [ref=f5e170]
+          - list [ref=f5e171]:
+            - listitem [ref=f5e172]:
+              - link "All Products" [ref=f5e173] [cursor=pointer]:
+                - /url: /shop
+            - listitem [ref=f5e174]:
+              - link "Drinkware" [ref=f5e175] [cursor=pointer]:
+                - /url: /shop?category=drinkware
+            - listitem [ref=f5e176]:
+              - link "Bags" [ref=f5e177] [cursor=pointer]:
+                - /url: /shop?category=bags
+            - listitem [ref=f5e178]:
+              - link "Electronics" [ref=f5e179] [cursor=pointer]:
+                - /url: /shop?category=electronics-tech
+            - listitem [ref=f5e180]:
+              - link "Promotional Gifting" [ref=f5e181] [cursor=pointer]:
+                - /url: /shop?category=promotional-gifting
+        - generic [ref=f5e182]:
+          - heading "Contact" [level=4] [ref=f5e183]
+          - list [ref=f5e184]:
+            - listitem [ref=f5e185]: 19A, Ram Mohan Dutta Rd, Sreepally, Bhowanipore, Kolkata, West Bengal 700020
+            - listitem [ref=f5e186]:
+              - link "+91 73372 88823" [ref=f5e187] [cursor=pointer]:
+                - /url: tel:+91 73372 88823
+            - listitem [ref=f5e188]:
+              - link "info@impacktgifting.com" [ref=f5e189] [cursor=pointer]:
+                - /url: mailto:info@impacktgifting.com
+      - generic [ref=f5e190]:
+        - paragraph [ref=f5e191]: © 2026 Impackt Gifting Solutions. All rights reserved.
+        - generic [ref=f5e192]:
+          - link "Privacy Policy" [ref=f5e193] [cursor=pointer]:
+            - /url: /privacy-policy
+          - link "Terms and Conditions" [ref=f5e194] [cursor=pointer]:
+            - /url: /terms-and-conditions

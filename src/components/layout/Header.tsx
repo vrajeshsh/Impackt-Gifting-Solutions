@@ -18,7 +18,7 @@ export default function Header() {
   const [isSearchOpen, setIsSearchOpen] = useState(false);
   const [isAccountOpen, setIsAccountOpen] = useState(false);
   const [isAuthModalOpen, setIsAuthModalOpen] = useState(false);
-  const [authModalTab, setAuthModalTab] = useState<'signin' | 'signup'>('signin');
+  const [authModalTab, setAuthModalTab] = useState<'signin' | 'signup' | 'reset'>('signin');
   const accountRef = useRef<HTMLDivElement>(null);
   const pathname = usePathname();
   const { toggleCart, items } = useCart();
@@ -39,6 +39,18 @@ export default function Header() {
     };
     document.addEventListener('mousedown', handleClickOutside);
     return () => document.removeEventListener('mousedown', handleClickOutside);
+  }, []);
+
+  useEffect(() => {
+    const params = new URLSearchParams(window.location.search);
+    const authModal = params.get('auth-modal');
+    if (authModal === 'reset') {
+      setAuthModalTab('reset');
+      setIsAuthModalOpen(true);
+      const newUrl = new URL(window.location.href);
+      newUrl.searchParams.delete('auth-modal');
+      window.history.replaceState({}, '', newUrl.toString());
+    }
   }, []);
 
   const isActive = (href: string) => pathname === href || pathname?.startsWith(href + '?');
@@ -103,7 +115,7 @@ export default function Header() {
                 <button 
                   onClick={() => setIsAccountOpen(!isAccountOpen)} 
                   title="Account & Settings"
-                  className="p-2 text-charcoal dark:text-ivory hover:text-accent transition-colors hidden sm:flex min-w-[44px] min-h-[44px] items-center justify-center" 
+                  className="p-2 text-charcoal dark:text-ivory hover:text-accent transition-colors min-w-[44px] min-h-[44px] flex items-center justify-center" 
                   aria-label="Account"
                 >
                   <User className="w-5 h-5" />
