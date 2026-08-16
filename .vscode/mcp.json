@@ -1,0 +1,13 @@
+{
+	"servers": {
+		"supabase": {
+			"type": "http",
+			"url": "https://mcp.supabase.com/mcp?project_ref=iiemzocumkgrlycensgy&features=docs,account,database,debugging,development,functions,branching"
+		},
+		"netlify-mcp": {
+			"type": "http",
+			"url": "https://netlify-mcp.netlify.app/mcp"
+		}
+	},
+	"inputs": []
+}

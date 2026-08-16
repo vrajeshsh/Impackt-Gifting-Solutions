@@ -1,0 +1,97 @@
+- generic [active] [ref=e1]:
+  - banner [ref=e2]:
+    - generic [ref=e4]:
+      - link [ref=e6] [cursor=pointer]:
+        - /url: /
+        - img "Impackt Gifting Solutions" [ref=e7]
+      - navigation [ref=e8]:
+        - link "Shop" [ref=e9] [cursor=pointer]:
+          - /url: /shop
+        - button "Categories" [ref=e11] [cursor=pointer]
+        - link "Corporate Gifting" [ref=e12] [cursor=pointer]:
+          - /url: /corporate-gifting
+        - link "About" [ref=e13] [cursor=pointer]:
+          - /url: /about
+        - link "Contact" [ref=e14] [cursor=pointer]:
+          - /url: /contact
+      - generic [ref=e15]:
+        - button "Search" [ref=e16] [cursor=pointer]
+        - button "Account" [ref=e21] [cursor=pointer]
+        - button "Cart" [ref=e25] [cursor=pointer]
+  - main [ref=e29]:
+    - generic [ref=e30]:
+      - generic [ref=e32]:
+        - paragraph [ref=e33]: Welcome
+        - heading "My Account" [level=1] [ref=e34]
+        - paragraph [ref=e35]: Sign in to access your account
+      - generic [ref=e38]:
+        - generic [ref=e40]:
+          - paragraph [ref=e42]: Loading...
+          - paragraph [ref=e44]: Loading...
+          - paragraph [ref=e46]: Loading...
+          - paragraph [ref=e48]: Loading...
+          - paragraph [ref=e50]: Loading...
+          - paragraph [ref=e52]: Loading...
+        - generic [ref=e54]:
+          - heading "Sign In" [level=2] [ref=e56]
+          - generic [ref=e57]:
+            - generic [ref=e58]:
+              - generic [ref=e59]: Email
+              - textbox "Enter your email" [ref=e60]
+            - generic [ref=e61]:
+              - generic [ref=e62]: Password
+              - textbox "Enter your password" [ref=e63]
+            - button "Sign In" [ref=e64] [cursor=pointer]
+            - paragraph [ref=e68]:
+              - text: Don't have an account?
+              - button "Sign Up" [ref=e69] [cursor=pointer]
+  - contentinfo [ref=e70]:
+    - generic [ref=e71]:
+      - generic [ref=e72]:
+        - generic [ref=e73]:
+          - link [ref=e74] [cursor=pointer]:
+            - /url: /
+            - img "Impackt Gifting Solutions" [ref=e75]
+          - paragraph [ref=e76]: Thoughtfully curated gifts for life's special moments, celebrations, and the people who matter.
+          - generic [ref=e77]:
+            - link "Facebook" [ref=e78] [cursor=pointer]:
+              - /url: https://www.facebook.com/impacktgiftingsolutions
+            - link "Instagram" [ref=e81] [cursor=pointer]:
+              - /url: https://www.instagram.com/impacktgiftingsolutions/
+            - link "LinkedIn" [ref=e84] [cursor=pointer]:
+              - /url: https://www.linkedin.com/company/impackt-gifting-solutions
+        - generic [ref=e87]:
+          - heading "Shop" [level=4] [ref=e88]
+          - list [ref=e89]:
+            - listitem [ref=e90]:
+              - link "All Products" [ref=e91] [cursor=pointer]:
+                - /url: /shop
+            - listitem [ref=e92]:
+              - link "Drinkware" [ref=e93] [cursor=pointer]:
+                - /url: /shop?category=drinkware
+            - listitem [ref=e94]:
+              - link "Bags" [ref=e95] [cursor=pointer]:
+                - /url: /shop?category=bags
+            - listitem [ref=e96]:
+              - link "Electronics" [ref=e97] [cursor=pointer]:
+                - /url: /shop?category=electronics-tech
+            - listitem [ref=e98]:
+              - link "Promotional Gifting" [ref=e99] [cursor=pointer]:
+                - /url: /shop?category=promotional-gifting
+        - generic [ref=e100]:
+          - heading "Contact" [level=4] [ref=e101]
+          - list [ref=e102]:
+            - listitem [ref=e103]: 19A, Ram Mohan Dutta Rd, Sreepally, Bhowanipore, Kolkata, West Bengal 700020
+            - listitem [ref=e104]:
+              - link "+91 73372 88823" [ref=e105] [cursor=pointer]:
+                - /url: tel:+91 73372 88823
+            - listitem [ref=e106]:
+              - link "info@impacktgifting.com" [ref=e107] [cursor=pointer]:
+                - /url: mailto:info@impacktgifting.com
+      - generic [ref=e108]:
+        - paragraph [ref=e109]: © 2026 Impackt Gifting Solutions. All rights reserved.
+        - generic [ref=e110]:
+          - link "Privacy Policy" [ref=e111] [cursor=pointer]:
+            - /url: /privacy-policy
+          - link "Terms and Conditions" [ref=e112] [cursor=pointer]:
+            - /url: /terms-and-conditions

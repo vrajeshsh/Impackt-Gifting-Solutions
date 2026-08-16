@@ -1,11 +1,13 @@
 'use client';
 
-import { useState, useMemo } from 'react';
+import { useState, useMemo, useEffect } from 'react';
 import { useSearchParams } from 'next/navigation';
-import { products, occasions, priceRanges } from '@/data/products';
+import { products as localProducts, occasions, priceRanges } from '@/data/products';
+import { getProducts } from '@/lib/productsDb';
 import ProductGrid from '@/components/products/ProductGrid';
 import ProductFilters from '@/components/products/ProductFilters';
 import { SlidersHorizontal, X, Search } from 'lucide-react';
+import { Product } from '@/types';
 
 export default function ShopClient() {
   const searchParams = useSearchParams();
@@ -14,6 +16,11 @@ export default function ShopClient() {
   const [selectedPriceRange, setSelectedPriceRange] = useState<string | undefined>();
   const [showFilters, setShowFilters] = useState(false);
   const [searchQuery, setSearchQuery] = useState(searchParams.get('search') || '');
+  const [products, setProducts] = useState<Product[]>(localProducts);
+
+  useEffect(() => {
+    getProducts().then(setProducts);
+  }, []);
 
   const filtered = useMemo(() => {
     return products.filter((product) => {
@@ -30,7 +37,7 @@ export default function ShopClient() {
       }
       return true;
     });
-  }, [selectedCategory, selectedOccasion, selectedPriceRange, searchQuery]);
+  }, [selectedCategory, selectedOccasion, selectedPriceRange, searchQuery, products]);
 
   const hasFilters = selectedCategory || selectedOccasion || selectedPriceRange || searchQuery.trim();
 

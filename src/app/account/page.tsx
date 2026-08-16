@@ -5,9 +5,11 @@ import Link from 'next/link';
 import { useSearchParams } from 'next/navigation';
 import { useWishlist } from '@/lib/wishlist-context';
 import { useTheme } from '@/lib/theme-context';
+import { useAuth } from '@/lib/auth-context';
 import { Product } from '@/types';
 import { Heart, User, Settings, LogIn, LogOut, Moon, Sun, Package, Edit3, Save, X } from 'lucide-react';
 import { FALLBACK_IMAGE } from '@/lib/theme-context';
+import AuthModal from '@/components/auth/AuthModal';
 
 type Tab = 'profile' | 'orders' | 'wishlist' | 'addresses' | 'security' | 'settings';
 
@@ -26,37 +28,36 @@ function AccountContent() {
   const searchParams = useSearchParams();
   const initialTab = (searchParams.get('tab') as Tab) || 'profile';
   const [activeTab, setActiveTab] = useState<Tab>(initialTab);
-  const [isLoggedIn, setIsLoggedIn] = useState(false);
-  const [username, setUsername] = useState('');
-  const [email, setEmail] = useState('');
-  const [phone, setPhone] = useState('');
   const [isEditing, setIsEditing] = useState(false);
+  const [isAuthModalOpen, setIsAuthModalOpen] = useState(false);
+  const [authModalTab, setAuthModalTab] = useState<'signin' | 'signup'>('signin');
   const [wishlistImgErrors, setWishlistImgErrors] = useState<Record<string, boolean>>({});
   const { items: wishlistItems, removeFromWishlist } = useWishlist();
   const { theme, toggleTheme } = useTheme();
+  const { user, profile, isLoading, signOut, error: authError, clearError } = useAuth();
 
-  const handleAuth = (e: React.FormEvent) => {
-    e.preventDefault();
-    if (username.trim()) {
-      setIsLoggedIn(true);
-    }
+  const isLoggedIn = Boolean(user);
+  const username = profile?.full_name || user?.user_metadata?.full_name || user?.email?.split('@')[0] || 'User';
+  const email = profile?.email || user?.email || '';
+  const phone = profile?.phone_number || user?.user_metadata?.phone_number || '';
+
+  const handleLogout = async () => {
+    await signOut();
+    setActiveTab('profile');
   };
 
-  const handleLogout = () => {
-    setIsLoggedIn(false);
-    setUsername('');
-    setEmail('');
-    setPhone('');
+  const openAuthModal = (tab: 'signin' | 'signup') => {
+    setAuthModalTab(tab);
+    setIsAuthModalOpen(true);
   };
 
-  const tabs = [
-    { id: 'profile' as Tab, label: 'My Profile', icon: User },
-    { id: 'orders' as Tab, label: 'Orders', icon: Package },
-    { id: 'wishlist' as Tab, label: 'Favorites', icon: Heart },
-    { id: 'addresses' as Tab, label: 'Addresses', icon: User },
-    { id: 'security' as Tab, label: 'Security', icon: Settings },
-    { id: 'settings' as Tab, label: 'Settings', icon: Settings },
-  ];
+  if (isLoading) {
+    return (
+      <div className="min-h-screen flex items-center justify-center bg-ivory dark:bg-obsidian">
+        <p className="text-warm-gray dark:text-stone-400">Loading...</p>
+      </div>
+    );
+  }
 
   return (
     <div className="min-h-screen bg-ivory dark:bg-obsidian transition-colors duration-300">
@@ -77,7 +78,14 @@ function AccountContent() {
           <div className="flex flex-col md:flex-row gap-8">
             <div className="md:w-64 flex-shrink-0">
               <div className="bg-white dark:bg-stone-900 border border-soft-beige/30 dark:border-stone-800 p-2 rounded-sm">
-                {tabs.map((tab) => {
+                {[
+                  { id: 'profile' as Tab, label: 'My Profile', icon: User },
+                  { id: 'orders' as Tab, label: 'Orders', icon: Package },
+                  { id: 'wishlist' as Tab, label: 'Favorites', icon: Heart },
+                  { id: 'addresses' as Tab, label: 'Addresses', icon: User },
+                  { id: 'security' as Tab, label: 'Security', icon: Settings },
+                  { id: 'settings' as Tab, label: 'Settings', icon: Settings },
+                ].map((tab) => {
                   const Icon = tab.icon;
                   return (
                     <button
@@ -112,32 +120,14 @@ function AccountContent() {
                   </div>
 
                   {!isLoggedIn ? (
-                    <form onSubmit={handleAuth} className="space-y-6 max-w-md">
-                      <div>
-                        <label className="block text-sm font-medium mb-3 text-charcoal dark:text-ivory">Username</label>
-                        <input
-                          type="text"
-                          value={username}
-                          onChange={(e) => setUsername(e.target.value)}
-                          required
-                          className="w-full px-4 py-3.5 border border-soft-beige/50 dark:border-stone-700 bg-ivory dark:bg-stone-800 focus:outline-none focus:border-accent transition-colors text-sm text-charcoal dark:text-ivory"
-                          placeholder="Enter your username"
-                        />
+                    <div className="text-center py-12">
+                      <User className="w-12 h-12 text-warm-gray/30 dark:text-stone-600 mx-auto mb-4" />
+                      <p className="text-warm-gray dark:text-stone-400 mb-4">Please sign in to view your profile</p>
+                      <div className="flex gap-3 justify-center">
+                        <button onClick={() => openAuthModal('signin')} className="btn-primary">Sign In</button>
+                        <button onClick={() => openAuthModal('signup')} className="btn-secondary">Create Account</button>
                       </div>
-                      <div>
-                        <label className="block text-sm font-medium mb-3 text-charcoal dark:text-ivory">Password</label>
-                        <input
-                          type="password"
-                          required
-                          className="w-full px-4 py-3.5 border border-soft-beige/50 dark:border-stone-700 bg-ivory dark:bg-stone-800 focus:outline-none focus:border-accent transition-colors text-sm text-charcoal dark:text-ivory"
-                          placeholder="Enter your password"
-                        />
-                      </div>
-                      <button type="submit" className="btn-primary w-full">
-                        <LogIn className="w-4 h-4" />
-                        Sign In
-                      </button>
-                    </form>
+                    </div>
                   ) : (
                     <div className="space-y-6">
                       <div className="flex items-center gap-4 p-6 bg-cream/50 dark:bg-stone-800/50">
@@ -157,7 +147,7 @@ function AccountContent() {
                             <input
                               type="text"
                               value={username}
-                              onChange={(e) => setUsername(e.target.value)}
+                              onChange={(e) => {}}
                               className="w-full px-4 py-3 border border-soft-beige/50 dark:border-stone-700 bg-ivory dark:bg-stone-800 focus:outline-none focus:border-accent transition-colors text-sm text-charcoal dark:text-ivory"
                             />
                           </div>
@@ -166,7 +156,7 @@ function AccountContent() {
                             <input
                               type="email"
                               value={email}
-                              onChange={(e) => setEmail(e.target.value)}
+                              onChange={(e) => {}}
                               className="w-full px-4 py-3 border border-soft-beige/50 dark:border-stone-700 bg-ivory dark:bg-stone-800 focus:outline-none focus:border-accent transition-colors text-sm text-charcoal dark:text-ivory"
                             />
                           </div>
@@ -175,7 +165,7 @@ function AccountContent() {
                             <input
                               type="tel"
                               value={phone}
-                              onChange={(e) => setPhone(e.target.value)}
+                              onChange={(e) => {}}
                               className="w-full px-4 py-3 border border-soft-beige/50 dark:border-stone-700 bg-ivory dark:bg-stone-800 focus:outline-none focus:border-accent transition-colors text-sm text-charcoal dark:text-ivory"
                             />
                           </div>
@@ -217,7 +207,7 @@ function AccountContent() {
                     <div className="text-center py-12">
                       <Package className="w-12 h-12 text-warm-gray/30 dark:text-stone-600 mx-auto mb-4" />
                       <p className="text-warm-gray dark:text-stone-400 mb-4">Please sign in to view your orders</p>
-                      <button onClick={() => setActiveTab('profile')} className="btn-primary">Sign In</button>
+                      <button onClick={() => openAuthModal('signin')} className="btn-primary">Sign In</button>
                     </div>
                   ) : (
                     <div className="space-y-4">
@@ -247,7 +237,7 @@ function AccountContent() {
                     <div className="text-center py-12">
                       <Heart className="w-12 h-12 text-warm-gray/30 dark:text-stone-600 mx-auto mb-4" />
                       <p className="text-warm-gray dark:text-stone-400 mb-4">Please sign in to view your favorites</p>
-                      <button onClick={() => setActiveTab('profile')} className="btn-primary">Sign In</button>
+                      <button onClick={() => openAuthModal('signin')} className="btn-primary">Sign In</button>
                     </div>
                   ) : wishlistItems.length === 0 ? (
                     <div className="text-center py-12">
@@ -293,7 +283,7 @@ function AccountContent() {
                   {!isLoggedIn ? (
                     <div className="text-center py-12">
                       <p className="text-warm-gray dark:text-stone-400 mb-4">Please sign in to manage your addresses</p>
-                      <button onClick={() => setActiveTab('profile')} className="btn-primary">Sign In</button>
+                      <button onClick={() => openAuthModal('signin')} className="btn-primary">Sign In</button>
                     </div>
                   ) : (
                     <div className="space-y-4">
@@ -319,7 +309,7 @@ function AccountContent() {
                   {!isLoggedIn ? (
                     <div className="text-center py-12">
                       <p className="text-warm-gray dark:text-stone-400 mb-4">Please sign in to manage security settings</p>
-                      <button onClick={() => setActiveTab('profile')} className="btn-primary">Sign In</button>
+                      <button onClick={() => openAuthModal('signin')} className="btn-primary">Sign In</button>
                     </div>
                   ) : (
                     <div className="space-y-8">
@@ -427,6 +417,8 @@ function AccountContent() {
           </div>
         </div>
       </section>
+
+      <AuthModal isOpen={isAuthModalOpen} onClose={() => setIsAuthModalOpen(false)} defaultTab={authModalTab} />
     </div>
   );
 }

@@ -3,23 +3,27 @@
 import { useState, useEffect, useRef } from 'react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
-import { Menu, X, Search, ShoppingBag, User, ChevronRight, Moon, Sun, LogOut, Heart, Settings } from 'lucide-react';
+import { Menu, X, Search, ShoppingBag, User, ChevronRight, Moon, Sun, LogOut, Heart, Settings, LogIn, UserPlus } from 'lucide-react';
 import { categories } from '@/data/products';
 import { useCart } from '@/lib/cart-context';
 import { useWishlist } from '@/lib/wishlist-context';
 import { useTheme } from '@/lib/theme-context';
+import { useAuth } from '@/lib/auth-context';
 import SearchModal from '@/components/search/SearchModal';
+import AuthModal from '@/components/auth/AuthModal';
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
   const [isSearchOpen, setIsSearchOpen] = useState(false);
   const [isAccountOpen, setIsAccountOpen] = useState(false);
-  const [isLoggedIn, setIsLoggedIn] = useState(false);
+  const [isAuthModalOpen, setIsAuthModalOpen] = useState(false);
+  const [authModalTab, setAuthModalTab] = useState<'signin' | 'signup'>('signin');
   const accountRef = useRef<HTMLDivElement>(null);
   const pathname = usePathname();
   const { toggleCart, items } = useCart();
   const { toggleTheme, theme } = useTheme();
+  const { user, profile, isLoading, signOut, isConfigured } = useAuth();
 
   useEffect(() => {
     const handleScroll = () => setIsScrolled(window.scrollY > 20);
@@ -38,6 +42,8 @@ export default function Header() {
   }, []);
 
   const isActive = (href: string) => pathname === href || pathname?.startsWith(href + '?');
+
+  const displayName = profile?.full_name || user?.user_metadata?.full_name || user?.email?.split('@')[0] || 'Guest';
 
   return (
     <>
@@ -106,22 +112,37 @@ export default function Header() {
                 {isAccountOpen && (
                   <div className="absolute right-0 top-full mt-4 w-72 bg-white dark:bg-stone-900 shadow-2xl border border-soft-beige/30 dark:border-stone-800 rounded-sm overflow-hidden z-50">
                     <div className="p-5 border-b border-soft-beige/30 dark:border-stone-800">
-                      <p className="font-display text-lg text-charcoal dark:text-ivory">Welcome, {isLoggedIn ? 'User' : 'Guest'}</p>
+                      <p className="font-display text-lg text-charcoal dark:text-ivory">Welcome, {displayName}</p>
                       <p className="text-warm-gray dark:text-stone-400 text-xs mt-1">Manage your account and preferences</p>
                     </div>
                     <div className="py-2">
-                      <Link href="/account" onClick={() => setIsAccountOpen(false)} className="flex items-center gap-3 px-5 py-3 text-sm text-charcoal dark:text-ivory hover:bg-cream dark:hover:bg-stone-800 hover:text-accent transition-colors">
-                        <User className="w-4 h-4" /> My Profile
-                      </Link>
-                      <Link href="/account?tab=orders" onClick={() => setIsAccountOpen(false)} className="flex items-center gap-3 px-5 py-3 text-sm text-charcoal dark:text-ivory hover:bg-cream dark:hover:bg-stone-800 hover:text-accent transition-colors">
-                        <ShoppingBag className="w-4 h-4" /> Orders & Tracking
-                      </Link>
-                      <Link href="/account?tab=wishlist" onClick={() => setIsAccountOpen(false)} className="flex items-center gap-3 px-5 py-3 text-sm text-charcoal dark:text-ivory hover:bg-cream dark:hover:bg-stone-800 hover:text-accent transition-colors">
-                        <Heart className="w-4 h-4" /> Saved Favorites
-                      </Link>
-                      <Link href="/account?tab=settings" onClick={() => setIsAccountOpen(false)} className="flex items-center gap-3 px-5 py-3 text-sm text-charcoal dark:text-ivory hover:bg-cream dark:hover:bg-stone-800 hover:text-accent transition-colors">
-                        <Settings className="w-4 h-4" /> Settings & Preferences
-                      </Link>
+                      {user ? (
+                        <>
+                          <Link href="/account" onClick={() => setIsAccountOpen(false)} className="flex items-center gap-3 px-5 py-3 text-sm text-charcoal dark:text-ivory hover:bg-cream dark:hover:bg-stone-800 hover:text-accent transition-colors">
+                            <User className="w-4 h-4" /> My Profile
+                          </Link>
+                          <Link href="/account?tab=orders" onClick={() => setIsAccountOpen(false)} className="flex items-center gap-3 px-5 py-3 text-sm text-charcoal dark:text-ivory hover:bg-cream dark:hover:bg-stone-800 hover:text-accent transition-colors">
+                            <ShoppingBag className="w-4 h-4" /> Orders & Tracking
+                          </Link>
+                          <Link href="/account?tab=wishlist" onClick={() => setIsAccountOpen(false)} className="flex items-center gap-3 px-5 py-3 text-sm text-charcoal dark:text-ivory hover:bg-cream dark:hover:bg-stone-800 hover:text-accent transition-colors">
+                            <Heart className="w-4 h-4" /> Saved Favorites
+                          </Link>
+                          <Link href="/account?tab=settings" onClick={() => setIsAccountOpen(false)} className="flex items-center gap-3 px-5 py-3 text-sm text-charcoal dark:text-ivory hover:bg-cream dark:hover:bg-stone-800 hover:text-accent transition-colors">
+                            <Settings className="w-4 h-4" /> Settings & Preferences
+                          </Link>
+                        </>
+                      ) : (
+                        <button 
+                          onClick={() => {
+                            setIsAccountOpen(false);
+                            setAuthModalTab('signin');
+                            setIsAuthModalOpen(true);
+                          }}
+                          className="w-full flex items-center gap-3 px-5 py-3 text-sm text-charcoal dark:text-ivory hover:bg-cream dark:hover:bg-stone-800 hover:text-accent transition-colors"
+                        >
+                          <LogIn className="w-4 h-4" /> Sign In
+                        </button>
+                      )}
                     </div>
                     <div className="p-4 border-t border-soft-beige/30 dark:border-stone-800">
                       <div className="flex items-center justify-between mb-3">
@@ -137,13 +158,30 @@ export default function Header() {
                           <span className={`inline-block h-4 w-4 rounded-full bg-white transition-transform ${theme === 'dark' ? 'translate-x-6' : 'translate-x-1'}`} />
                         </button>
                       </div>
-                      <button 
-                        onClick={() => { setIsLoggedIn(!isLoggedIn); setIsAccountOpen(false); }}
-                        className="w-full flex items-center justify-center gap-2 py-2.5 text-sm font-medium text-charcoal dark:text-ivory border border-soft-beige/50 dark:border-stone-700 hover:bg-cream dark:hover:bg-stone-800 transition-colors"
-                      >
-                        {isLoggedIn ? <LogOut className="w-4 h-4" /> : <User className="w-4 h-4" />}
-                        {isLoggedIn ? 'Sign Out' : 'Sign In'}
-                      </button>
+                      {user ? (
+                        <button 
+                          onClick={async () => {
+                            await signOut();
+                            setIsAccountOpen(false);
+                          }}
+                          className="w-full flex items-center justify-center gap-2 py-2.5 text-sm font-medium text-charcoal dark:text-ivory border border-soft-beige/50 dark:border-stone-700 hover:bg-cream dark:hover:bg-stone-800 transition-colors"
+                        >
+                          <LogOut className="w-4 h-4" />
+                          Sign Out
+                        </button>
+                      ) : (
+                        <button 
+                          onClick={() => {
+                            setIsAccountOpen(false);
+                            setAuthModalTab('signup');
+                            setIsAuthModalOpen(true);
+                          }}
+                          className="w-full flex items-center justify-center gap-2 py-2.5 text-sm font-medium text-charcoal dark:text-ivory border border-soft-beige/50 dark:border-stone-700 hover:bg-cream dark:hover:bg-stone-800 transition-colors"
+                        >
+                          <User className="w-4 h-4" />
+                          Create Account
+                        </button>
+                      )}
                     </div>
                   </div>
                 )}
@@ -186,6 +224,7 @@ export default function Header() {
         )}
       </header>
       <SearchModal isOpen={isSearchOpen} onClose={() => setIsSearchOpen(false)} />
+      <AuthModal isOpen={isAuthModalOpen} onClose={() => setIsAuthModalOpen(false)} defaultTab={authModalTab} />
     </>
   );
 }

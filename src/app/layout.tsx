@@ -5,9 +5,11 @@ import Header from '@/components/layout/Header';
 import Footer from '@/components/layout/Footer';
 import CartDrawer from '@/components/cart/CartDrawer';
 import GlobalImageErrorHandler from '@/components/GlobalImageErrorHandler';
+import EnvValidationBanner from '@/components/EnvValidationBanner';
 import { CartProvider } from '@/lib/cart-context';
 import { WishlistProvider } from '@/lib/wishlist-context';
 import { ThemeProvider } from '@/lib/theme-context';
+import { AuthProvider } from '@/lib/auth-context';
 
 const inter = Inter({ subsets: ['latin'], variable: '--font-body', display: 'swap' });
 const playfair = Playfair_Display({ subsets: ['latin'], variable: '--font-display', display: 'swap' });
@@ -44,16 +46,19 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="en" suppressHydrationWarning>
       <body className={`${inter.variable} ${playfair.variable} font-body bg-ivory text-charcoal antialiased transition-colors duration-300`}>
+        <EnvValidationBanner />
         <ThemeProvider>
-          <CartProvider>
-            <WishlistProvider>
-              <Header />
-              <main className="pt-16 md:pt-24">{children}</main>
-              <Footer />
-              <CartDrawer />
-              <GlobalImageErrorHandler />
-            </WishlistProvider>
-          </CartProvider>
+          <AuthProvider>
+            <CartProvider>
+              <WishlistProvider>
+                <Header />
+                <main className="pt-16 md:pt-24">{children}</main>
+                <Footer />
+                <CartDrawer />
+                <GlobalImageErrorHandler />
+              </WishlistProvider>
+            </CartProvider>
+          </AuthProvider>
         </ThemeProvider>
       </body>
     </html>

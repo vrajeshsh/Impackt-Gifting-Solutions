@@ -1,0 +1,72 @@
+- generic [active] [ref=f4e1]:
+  - banner [ref=f4e2]:
+    - generic [ref=f4e4]:
+      - link [ref=f4e6] [cursor=pointer]:
+        - /url: /
+        - img "Impackt Gifting Solutions" [ref=f4e7]
+      - navigation [ref=f4e8]:
+        - link "Shop" [ref=f4e9] [cursor=pointer]:
+          - /url: /shop
+        - button "Categories" [ref=f4e11] [cursor=pointer]
+        - link "Corporate Gifting" [ref=f4e12] [cursor=pointer]:
+          - /url: /corporate-gifting
+        - link "About" [ref=f4e13] [cursor=pointer]:
+          - /url: /about
+        - link "Contact" [ref=f4e14] [cursor=pointer]:
+          - /url: /contact
+      - generic [ref=f4e15]:
+        - button "Search" [ref=f4e16] [cursor=pointer]
+        - button "Account" [ref=f4e21] [cursor=pointer]
+        - button "Cart" [ref=f4e25] [cursor=pointer]
+  - main [ref=f4e29]:
+    - paragraph [ref=f4e31]: Loading...
+  - contentinfo [ref=f4e32]:
+    - generic [ref=f4e33]:
+      - generic [ref=f4e34]:
+        - generic [ref=f4e35]:
+          - link [ref=f4e36] [cursor=pointer]:
+            - /url: /
+            - img "Impackt Gifting Solutions" [ref=f4e37]
+          - paragraph [ref=f4e38]: Thoughtfully curated gifts for life's special moments, celebrations, and the people who matter.
+          - generic [ref=f4e39]:
+            - link "Facebook" [ref=f4e40] [cursor=pointer]:
+              - /url: https://www.facebook.com/impacktgiftingsolutions
+            - link "Instagram" [ref=f4e43] [cursor=pointer]:
+              - /url: https://www.instagram.com/impacktgiftingsolutions/
+            - link "LinkedIn" [ref=f4e46] [cursor=pointer]:
+              - /url: https://www.linkedin.com/company/impackt-gifting-solutions
+        - generic [ref=f4e49]:
+          - heading "Shop" [level=4] [ref=f4e50]
+          - list [ref=f4e51]:
+            - listitem [ref=f4e52]:
+              - link "All Products" [ref=f4e53] [cursor=pointer]:
+                - /url: /shop
+            - listitem [ref=f4e54]:
+              - link "Drinkware" [ref=f4e55] [cursor=pointer]:
+                - /url: /shop?category=drinkware
+            - listitem [ref=f4e56]:
+              - link "Bags" [ref=f4e57] [cursor=pointer]:
+                - /url: /shop?category=bags
+            - listitem [ref=f4e58]:
+              - link "Electronics" [ref=f4e59] [cursor=pointer]:
+                - /url: /shop?category=electronics-tech
+            - listitem [ref=f4e60]:
+              - link "Promotional Gifting" [ref=f4e61] [cursor=pointer]:
+                - /url: /shop?category=promotional-gifting
+        - generic [ref=f4e62]:
+          - heading "Contact" [level=4] [ref=f4e63]
+          - list [ref=f4e64]:
+            - listitem [ref=f4e65]: 19A, Ram Mohan Dutta Rd, Sreepally, Bhowanipore, Kolkata, West Bengal 700020
+            - listitem [ref=f4e66]:
+              - link "+91 73372 88823" [ref=f4e67] [cursor=pointer]:
+                - /url: tel:+91 73372 88823
+            - listitem [ref=f4e68]:
+              - link "info@impacktgifting.com" [ref=f4e69] [cursor=pointer]:
+                - /url: mailto:info@impacktgifting.com
+      - generic [ref=f4e70]:
+        - paragraph [ref=f4e71]: © 2026 Impackt Gifting Solutions. All rights reserved.
+        - generic [ref=f4e72]:
+          - link "Privacy Policy" [ref=f4e73] [cursor=pointer]:
+            - /url: /privacy-policy
+          - link "Terms and Conditions" [ref=f4e74] [cursor=pointer]:
+            - /url: /terms-and-conditions

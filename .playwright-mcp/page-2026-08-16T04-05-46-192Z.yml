@@ -1,0 +1,173 @@
+- generic [active] [ref=f2e1]:
+  - alert [ref=f2e535]
+  - banner [ref=f2e536]:
+    - generic [ref=f2e538]:
+      - link [ref=f2e540] [cursor=pointer]:
+        - /url: /
+        - img "Impackt Gifting Solutions" [ref=f2e541]
+      - navigation [ref=f2e542]:
+        - link "Shop" [ref=f2e543] [cursor=pointer]:
+          - /url: /shop
+        - button "Categories" [ref=f2e545] [cursor=pointer]
+        - link "Corporate Gifting" [ref=f2e546] [cursor=pointer]:
+          - /url: /corporate-gifting
+        - link "About" [ref=f2e547] [cursor=pointer]:
+          - /url: /about
+        - link "Contact" [ref=f2e548] [cursor=pointer]:
+          - /url: /contact
+      - generic [ref=f2e549]:
+        - button "Search" [ref=f2e550] [cursor=pointer]
+        - button "Account" [ref=f2e555] [cursor=pointer]
+        - button "Cart" [ref=f2e559] [cursor=pointer]
+  - main [ref=f2e563]:
+    - generic [ref=f2e1067]:
+      - navigation [ref=f2e1070]:
+        - link "Home" [ref=f2e1071] [cursor=pointer]:
+          - /url: /
+        - link "Shop" [ref=f2e1074] [cursor=pointer]:
+          - /url: /shop
+        - generic [ref=f2e1077]: Classic Stainless Steel Bottle
+      - generic [ref=f2e1078]:
+        - generic [ref=f2e1079]:
+          - generic [ref=f2e1080]:
+            - img "Classic Stainless Steel Bottle" [ref=f2e1082]
+            - generic [ref=f2e1083]:
+              - button [ref=f2e1084] [cursor=pointer]
+              - button [ref=f2e1085] [cursor=pointer]
+          - generic [ref=f2e1086]:
+            - generic [ref=f2e1087]: Best Seller
+            - heading "Classic Stainless Steel Bottle" [level=1] [ref=f2e1088]
+            - paragraph [ref=f2e1089]: Bottles and Flasks
+            - generic [ref=f2e1090]:
+              - generic [ref=f2e1091]: ₹1,299
+              - generic [ref=f2e1092]: ₹1,999
+              - generic [ref=f2e1093]: 35% off
+            - paragraph [ref=f2e1095]: Sleek stainless steel insulated bottle perfect for corporate gifting. Keeps beverages hot or cold for hours.
+            - generic [ref=f2e1096]:
+              - generic [ref=f2e1097]:
+                - generic [ref=f2e1098]: Material
+                - generic [ref=f2e1099]: Stainless Steel
+              - generic [ref=f2e1100]:
+                - generic [ref=f2e1101]: Dimensions
+                - generic [ref=f2e1102]: "Height: 26cm, Diameter: 7cm, Capacity: 750ml"
+            - generic [ref=f2e1103]:
+              - generic [ref=f2e1104]: Quantity
+              - generic [ref=f2e1105]:
+                - button "-" [ref=f2e1106] [cursor=pointer]
+                - generic [ref=f2e1107]: "1"
+                - button "+" [ref=f2e1108] [cursor=pointer]
+            - generic [ref=f2e1109]:
+              - generic [ref=f2e1110]: Personalization
+              - textbox "Enter name or message (optional)" [ref=f2e1111]
+            - generic [ref=f2e1112]:
+              - button "Add to Cart" [ref=f2e1113] [cursor=pointer]
+              - button "Add to wishlist" [ref=f2e1114] [cursor=pointer]
+              - button "Share" [ref=f2e1117] [cursor=pointer]
+            - generic [ref=f2e1124]:
+              - paragraph [ref=f2e1131]: Free shipping over ₹999
+              - paragraph [ref=f2e1135]: Secure checkout
+              - paragraph [ref=f2e1140]: Easy returns
+        - generic [ref=f2e1141]:
+          - generic [ref=f2e1143]:
+            - paragraph [ref=f2e1144]: You May Also Like
+            - heading "Related Products" [level=2] [ref=f2e1145]
+          - generic [ref=f2e1146]:
+            - generic [ref=f2e1148]:
+              - link "Copper Water Bottle 40% OFF Add to wishlist" [ref=f2e1149] [cursor=pointer]:
+                - /url: /shop/copper-water-bottle
+                - img "Copper Water Bottle" [ref=f2e1150]
+                - generic [ref=f2e1151]: 40% OFF
+                - button "Add to wishlist" [ref=f2e1153]
+              - generic [ref=f2e1156]:
+                - link [ref=f2e1157] [cursor=pointer]:
+                  - /url: /shop/copper-water-bottle
+                  - heading "Copper Water Bottle" [level=3] [ref=f2e1158]
+                - paragraph [ref=f2e1159]: Bottles and Flasks
+                - generic [ref=f2e1160]:
+                  - generic [ref=f2e1161]: ₹899
+                  - generic [ref=f2e1162]: ₹1,499
+                  - generic [ref=f2e1163]: 40% off
+                - paragraph [ref=f2e1164]: Personalizable
+                - button "Add to Cart" [ref=f2e1166] [cursor=pointer]
+            - generic [ref=f2e1169]:
+              - link "Insulated Coffee Tumbler Insulated Coffee Tumbler 37% OFF Add to wishlist" [ref=f2e1170] [cursor=pointer]:
+                - /url: /shop/insulated-coffee-tumbler
+                - img "Insulated Coffee Tumbler" [ref=f2e1171]
+                - img "Insulated Coffee Tumbler" [ref=f2e1172]
+                - generic [ref=f2e1173]: 37% OFF
+                - button "Add to wishlist" [ref=f2e1175]
+              - generic [ref=f2e1178]:
+                - link [ref=f2e1179] [cursor=pointer]:
+                  - /url: /shop/insulated-coffee-tumbler
+                  - heading "Insulated Coffee Tumbler" [level=3] [ref=f2e1180]
+                - paragraph [ref=f2e1181]: Coffee Mugs and Tumblers
+                - generic [ref=f2e1182]:
+                  - generic [ref=f2e1183]: ₹749
+                  - generic [ref=f2e1184]: ₹1,199
+                  - generic [ref=f2e1185]: 38% off
+                - paragraph [ref=f2e1186]: Personalizable
+                - button "Add to Cart" [ref=f2e1188] [cursor=pointer]
+            - generic [ref=f2e1191]:
+              - link [ref=f2e1192] [cursor=pointer]:
+                - /url: /shop/designer-ceramic-mug
+                - img "Designer Ceramic Mug" [ref=f2e1193]
+                - img "Designer Ceramic Mug" [ref=f2e1194]
+                - button "Add to wishlist" [ref=f2e1196]
+              - generic [ref=f2e1199]:
+                - link [ref=f2e1200] [cursor=pointer]:
+                  - /url: /shop/designer-ceramic-mug
+                  - heading "Designer Ceramic Mug" [level=3] [ref=f2e1201]
+                - paragraph [ref=f2e1202]: Coffee Mugs and Tumblers
+                - generic [ref=f2e1203]: ₹499
+                - paragraph [ref=f2e1205]: Personalizable
+                - button "Add to Cart" [ref=f2e1207] [cursor=pointer]
+  - contentinfo [ref=f2e1024]:
+    - generic [ref=f2e1025]:
+      - generic [ref=f2e1026]:
+        - generic [ref=f2e1027]:
+          - link [ref=f2e1028] [cursor=pointer]:
+            - /url: /
+            - img "Impackt Gifting Solutions" [ref=f2e1029]
+          - paragraph [ref=f2e1030]: Thoughtfully curated gifts for life's special moments, celebrations, and the people who matter.
+          - generic [ref=f2e1031]:
+            - link "Facebook" [ref=f2e1032] [cursor=pointer]:
+              - /url: https://www.facebook.com/impacktgiftingsolutions
+            - link "Instagram" [ref=f2e1035] [cursor=pointer]:
+              - /url: https://www.instagram.com/impacktgiftingsolutions/
+            - link "LinkedIn" [ref=f2e1038] [cursor=pointer]:
+              - /url: https://www.linkedin.com/company/impackt-gifting-solutions
+        - generic [ref=f2e1041]:
+          - heading "Shop" [level=4] [ref=f2e1042]
+          - list [ref=f2e1043]:
+            - listitem [ref=f2e1044]:
+              - link "All Products" [ref=f2e1045] [cursor=pointer]:
+                - /url: /shop
+            - listitem [ref=f2e1046]:
+              - link "Drinkware" [ref=f2e1047] [cursor=pointer]:
+                - /url: /shop?category=drinkware
+            - listitem [ref=f2e1048]:
+              - link "Bags" [ref=f2e1049] [cursor=pointer]:
+                - /url: /shop?category=bags
+            - listitem [ref=f2e1050]:
+              - link "Electronics" [ref=f2e1051] [cursor=pointer]:
+                - /url: /shop?category=electronics-tech
+            - listitem [ref=f2e1052]:
+              - link "Promotional Gifting" [ref=f2e1053] [cursor=pointer]:
+                - /url: /shop?category=promotional-gifting
+        - generic [ref=f2e1054]:
+          - heading "Contact" [level=4] [ref=f2e1055]
+          - list [ref=f2e1056]:
+            - listitem [ref=f2e1057]: 19A, Ram Mohan Dutta Rd, Sreepally, Bhowanipore, Kolkata, West Bengal 700020
+            - listitem [ref=f2e1058]:
+              - link "+91 73372 88823" [ref=f2e1059] [cursor=pointer]:
+                - /url: tel:+91 73372 88823
+            - listitem [ref=f2e1060]:
+              - link "info@impacktgifting.com" [ref=f2e1061] [cursor=pointer]:
+                - /url: mailto:info@impacktgifting.com
+      - generic [ref=f2e1062]:
+        - paragraph [ref=f2e1063]: © 2026 Impackt Gifting Solutions. All rights reserved.
+        - generic [ref=f2e1064]:
+          - link "Privacy Policy" [ref=f2e1065] [cursor=pointer]:
+            - /url: /privacy-policy
+          - link "Terms and Conditions" [ref=f2e1066] [cursor=pointer]:
+            - /url: /terms-and-conditions
