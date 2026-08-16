@@ -1,0 +1,51 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --color-ivory: #FAF9F6;
+    --color-cream: #F5F0E8;
+    --color-charcoal: #1A1A1A;
+    --color-warm-gray: #6B6B6B;
+    --color-accent: #8B5E3C;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+
+  .dark {
+    color-scheme: dark;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply bg-charcoal text-ivory px-8 py-4 text-sm font-medium tracking-wide uppercase hover:bg-accent transition-all duration-500 ease-out inline-flex items-center justify-center gap-2;
+  }
+  
+  .btn-secondary {
+    @apply border border-charcoal text-charcoal px-8 py-4 text-sm font-medium tracking-wide uppercase hover:bg-charcoal hover:text-ivory transition-all duration-500 ease-out inline-flex items-center justify-center gap-2;
+  }
+
+  .section-padding {
+    @apply py-24 md:py-32 px-6;
+  }
+
+  .container-custom {
+    @apply max-w-7xl mx-auto px-6;
+  }
+}
+
+@layer utilities {
+  .transition-theme {
+    transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+  }
+}
